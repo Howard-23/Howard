@@ -140,6 +140,37 @@ html {
   align-items: center;
 }
 
+/* Desktop: make primary CTA prominent and center the whole button group */
+.buttons {
+  justify-content: center;
+  gap: 1rem 1.25rem;
+}
+
+.buttons .btn.primary {
+  min-width: 260px;
+  padding: 1rem 2.25rem;
+  border-radius: 40px;
+  box-shadow: 0 12px 28px rgba(124,58,237,0.35), 0 0 30px rgba(124,58,237,0.15);
+}
+
+.buttons .pill-group {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--accent-light);
+  border: 2px solid rgba(124,58,237,0.5);
+  padding: 0.6rem 1.1rem;
+  border-radius: 28px;
+}
+
+.btn.secondary:hover {
+  background: rgba(124,58,237,0.08);
+}
+
 /* SOCIAL MEDIA LINKS */
 .social-links {
   display: flex;
@@ -147,6 +178,22 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+/* Ensure social icons are laid out horizontally (row) on all breakpoints */
+.social-links {
+  flex-direction: row;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure social icons stay centered under the buttons */
+.hero .social-links {
+  margin-top: 2.5rem;
 }
 
 .social-icon {
@@ -802,11 +849,25 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
     width: 100%;
+    align-items: center;
   }
 
-  .btn {
+  /* Make primary CTA full-width but keep secondary buttons auto-sized to avoid overlap */
+  .buttons .btn {
+    width: auto;
+  }
+
+  .btn.primary {
     width: 100%;
     padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    display: inline-block;
+  }
+
+  .btn.secondary {
+    width: auto;
+    padding: 0.6rem 1rem;
+    border-radius: 28px;
     font-size: 0.95rem;
   }
 
@@ -1000,12 +1061,22 @@ footer {
   /* Buttons */
   .buttons {
     gap: 0.5rem;
+    align-items: center;
   }
 
-  .btn {
-    padding: 0.65rem 1.2rem;
-    font-size: 0.9rem;
-    border-radius: 40px;
+  /* Keep primary prominent and full-width, secondaries compact */
+  .btn.primary {
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 36px;
+  }
+
+  .btn.secondary {
+    width: auto;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.88rem;
+    border-radius: 22px;
   }
 
   /* Sections */
