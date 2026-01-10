@@ -1,0 +1,77 @@
+{
+  "personalInfo": {
+    "name": "John Howard P. Garcia",
+    "title": "Front-End Developer",
+    "email": "your.email@example.com",
+    "phone": "+1 (XXX) XXX-XXXX",
+    "location": "Your City, State",
+    "summary": "Front-End Developer with expertise in building modern, scalable web applications using Next.js, React, and contemporary web technologies. Passionate about creating intuitive user interfaces and implementing best practices in web development."
+  },
+  "experience": [
+    {
+      "date": "2024 – Present",
+      "role": "Front-End Developer",
+      "company": "Company Name",
+      "description": "Building scalable web apps with Next.js and React. Developing responsive UI components and optimizing performance.",
+      "responsibilities": [
+        "Developed and maintained React components using modern JavaScript/TypeScript",
+        "Implemented responsive designs with CSS and Tailwind CSS",
+        "Collaborated with backend teams to integrate REST APIs",
+        "Optimized web applications for performance and SEO"
+      ]
+    },
+    {
+      "date": "2023 – 2024",
+      "role": "Junior Web Developer",
+      "company": "Previous Company",
+      "description": "Developed UI components and collaborated with backend teams.",
+      "responsibilities": [
+        "Created reusable UI components using React",
+        "Assisted in website maintenance and feature implementation",
+        "Participated in code reviews and team discussions",
+        "Learned and applied front-end best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "University Name",
+      "year": "2023",
+      "details": "Relevant coursework: Web Development, Data Structures, Database Management"
+    }
+  ],
+  "skills": {
+    "frontend": ["Next.js", "React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "backend": ["Node.js", "Java", "Python"],
+    "tools": ["Git", "GitHub", "VS Code", "Webpack", "NPM", "Figma"],
+    "other": ["REST APIs", "Responsive Design", "Web Performance", "SEO Optimization", "UI/UX Design Principles"]
+  },
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "Professional portfolio with dark mode, smooth animations, and responsive design.",
+      "tech": ["Next.js", "React", "Framer Motion", "CSS", "TypeScript"],
+      "github": "https://github.com/yourusername/portfolio",
+      "liveUrl": "https://yourportfolio.com",
+      "highlights": [
+        "Implemented dark/light theme toggle with local storage persistence",
+        "Created smooth page transitions using Framer Motion",
+        "Optimized performance with Next.js Image optimization"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "React Fundamentals",
+      "issuer": "Certification Provider",
+      "year": "2024"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    }
+  ]
+}

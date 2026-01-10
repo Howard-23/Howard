@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "Professional portfolio with dark mode and animations.",
+    "tech": ["Next.js", "Framer Motion", "CSS"],
+    "github": "https://github.com/yourusername"
+  }
+]
