@@ -2,11 +2,19 @@
   {
     "date": "2024 – Present",
     "role": "Front-End Developer",
-    "description": "Building scalable web apps with Next.js and React."
+    "company": "Freelance",
+    "description": "Building responsive, modern web applications for clients using Next.js, React, and Tailwind CSS. Specializing in creating intuitive user interfaces and seamless user experiences."
   },
   {
     "date": "2023 – 2024",
+    "role": "Virtual Assistant & Web Support",
+    "company": "Remote",
+    "description": "Provided comprehensive virtual assistance including email management, chat support, and basic Shopify store customization. Handled customer inquiries and maintained efficient communication workflows."
+  },
+  {
+    "date": "2022 – 2023",
     "role": "Junior Web Developer",
-    "description": "Developed UI components and collaborated with backend."
+    "company": "Tech Solutions Inc.",
+    "description": "Developed and maintained responsive websites, implemented UI components, and collaborated with senior developers on various client projects. Gained hands-on experience with modern web technologies."
   }
 ]

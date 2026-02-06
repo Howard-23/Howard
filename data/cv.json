@@ -1,76 +1,124 @@
 {
   "personalInfo": {
     "name": "John Howard P. Garcia",
-    "title": "Front-End Developer",
-    "email": "your.email@example.com",
-    "phone": "+1 (XXX) XXX-XXXX",
-    "location": "Your City, State",
-    "summary": "Front-End Developer with expertise in building modern, scalable web applications using Next.js, React, and contemporary web technologies. Passionate about creating intuitive user interfaces and implementing best practices in web development."
+    "title": "Front-End Developer & Virtual Assistant",
+    "email": "johnhowardgarcia23@gmail.com",
+    "phone": "+63 XXX XXX XXXX",
+    "location": "Philippines",
+    "summary": "Results-driven Front-End Developer with expertise in building modern, responsive web applications using Next.js, React, and TypeScript. Experienced in providing virtual assistance services including email/chat management and Shopify store customization. Passionate about creating intuitive user experiences and delivering high-quality work that exceeds client expectations."
   },
   "experience": [
     {
       "date": "2024 – Present",
       "role": "Front-End Developer",
-      "company": "Company Name",
-      "description": "Building scalable web apps with Next.js and React. Developing responsive UI components and optimizing performance.",
+      "company": "Freelance / Self-Employed",
+      "description": "Develop custom web applications and websites for clients using modern technologies. Focus on creating responsive, accessible, and performant user interfaces.",
       "responsibilities": [
-        "Developed and maintained React components using modern JavaScript/TypeScript",
-        "Implemented responsive designs with CSS and Tailwind CSS",
-        "Collaborated with backend teams to integrate REST APIs",
-        "Optimized web applications for performance and SEO"
+        "Build responsive web applications using Next.js, React, and TypeScript",
+        "Implement modern UI/UX designs with Tailwind CSS and Framer Motion",
+        "Optimize website performance and SEO for better search rankings",
+        "Collaborate with clients to understand requirements and deliver solutions",
+        "Maintain code quality through version control and best practices"
       ]
     },
     {
       "date": "2023 – 2024",
-      "role": "Junior Web Developer",
-      "company": "Previous Company",
-      "description": "Developed UI components and collaborated with backend teams.",
+      "role": "Virtual Assistant & Web Support Specialist",
+      "company": "Remote E-Commerce Business",
+      "description": "Provided comprehensive virtual assistance while supporting web operations. Managed customer communications and performed basic Shopify customizations.",
       "responsibilities": [
-        "Created reusable UI components using React",
-        "Assisted in website maintenance and feature implementation",
-        "Participated in code reviews and team discussions",
-        "Learned and applied front-end best practices"
+        "Managed email and live chat support for customer inquiries",
+        "Performed basic Shopify Liquid customizations and theme edits",
+        "Handled product listings, inventory updates, and order processing",
+        "Maintained organized documentation and streamlined workflows",
+        "Collaborated with team members to improve customer experience"
+      ]
+    },
+    {
+      "date": "2022 – 2023",
+      "role": "Junior Web Developer",
+      "company": "Digital Solutions Agency",
+      "description": "Assisted in the development of client websites and web applications. Gained hands-on experience with front-end technologies and industry best practices.",
+      "responsibilities": [
+        "Developed responsive web pages using HTML, CSS, and JavaScript",
+        "Assisted senior developers with React component development",
+        "Participated in code reviews and implemented feedback",
+        "Maintained and updated existing client websites",
+        "Learned and applied modern web development workflows"
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Science in Computer Science",
-      "school": "University Name",
+      "degree": "Bachelor of Science in Information Technology",
+      "school": "University of the Philippines",
       "year": "2023",
-      "details": "Relevant coursework: Web Development, Data Structures, Database Management"
+      "details": "Relevant coursework: Web Development, Database Management, Software Engineering, UI/UX Design"
+    },
+    {
+      "degree": "Web Development Bootcamp",
+      "school": "Online Certification",
+      "year": "2022",
+      "details": "Intensive program covering HTML, CSS, JavaScript, React, and Node.js"
     }
   ],
   "skills": {
-    "frontend": ["Next.js", "React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    "backend": ["Node.js", "Java", "Python"],
-    "tools": ["Git", "GitHub", "VS Code", "Webpack", "NPM", "Figma"],
-    "other": ["REST APIs", "Responsive Design", "Web Performance", "SEO Optimization", "UI/UX Design Principles"]
+    "frontend": ["Next.js", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
+    "backend & tools": ["Node.js", "Git", "GitHub", "REST APIs", "JSON"],
+    "e-commerce": ["Shopify", "Liquid", "Store Management", "Product Listings"],
+    "soft skills": ["Communication", "Time Management", "Problem Solving", "Client Relations"]
   },
   "projects": [
     {
-      "title": "Portfolio Website",
-      "description": "Professional portfolio with dark mode, smooth animations, and responsive design.",
-      "tech": ["Next.js", "React", "Framer Motion", "CSS", "TypeScript"],
-      "github": "https://github.com/yourusername/portfolio",
+      "title": "Professional Portfolio Website",
+      "description": "A modern portfolio website showcasing projects and skills. Features dark/light mode, smooth animations, and responsive design.",
+      "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "github": "https://github.com/Howard-23/Howard-23",
       "liveUrl": "https://yourportfolio.com",
       "highlights": [
-        "Implemented dark/light theme toggle with local storage persistence",
+        "Implemented theme switching with persistent user preference",
         "Created smooth page transitions using Framer Motion",
-        "Optimized performance with Next.js Image optimization"
+        "Built with Next.js for optimal performance and SEO",
+        "Fully responsive design for all screen sizes"
+      ]
+    },
+    {
+      "title": "E-Commerce Dashboard",
+      "description": "A dashboard for managing online store operations with analytics, order tracking, and inventory management.",
+      "tech": ["React", "TypeScript", "Tailwind CSS", "Recharts"],
+      "github": "https://github.com/yourusername/dashboard",
+      "liveUrl": "https://yourdashboard.com",
+      "highlights": [
+        "Built interactive data visualizations",
+        "Implemented responsive data tables",
+        "Created reusable component library"
       ]
     }
   ],
   "certifications": [
     {
-      "name": "React Fundamentals",
-      "issuer": "Certification Provider",
+      "name": "React - The Complete Guide",
+      "issuer": "Udemy",
       "year": "2024"
+    },
+    {
+      "name": "Shopify Theme Development",
+      "issuer": "Shopify Partner Academy",
+      "year": "2023"
+    },
+    {
+      "name": "Responsive Web Design",
+      "issuer": "freeCodeCamp",
+      "year": "2022"
     }
   ],
   "languages": [
     {
       "language": "English",
+      "proficiency": "Professional Working Proficiency"
+    },
+    {
+      "language": "Filipino",
       "proficiency": "Native"
     }
   ]
