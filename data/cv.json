@@ -63,9 +63,9 @@
     }
   ],
   "skills": {
-    "frontend": ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS",],
+    "frontend": ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
     "backend & tools": ["Node.js", "Git", "GitHub"],
-    "e-commerce": ["Shopify Liquid",],
+    "e-commerce": ["Shopify Liquid"],
     "soft skills": ["Time Management", "Problem Solving", "Client Relations"]
   },
   "projects": [
