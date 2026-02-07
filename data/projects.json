@@ -4,8 +4,8 @@
     "description": "A modern, responsive portfolio website built with Next.js and TypeScript. Features dark/light mode toggle, smooth animations, and a clean, professional design optimized for showcasing work.",
     "icon": "💼",
     "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    "github": "https://github.com/Howard-23/Howard-23",
-    "liveUrl": "https://yourportfolio.com",
+    "github": "https://github.com/Howard-23/Howard",
+    "liveUrl": "https://howard-project.vercel.app/",
     "highlights": [
       "Implemented seamless dark/light mode with local storage persistence",
       "Created fluid page transitions and micro-interactions using Framer Motion",
@@ -27,10 +27,20 @@
       "Integrated with REST APIs for live data fetching"
     ]
   },
+
+  {
+    "title": "Attendance System",
+    "description": "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
+    "icon": "✅",
+    "tech": ["Next.js","Tailwind CSS","TypeScript"],
+    "github": "https://github.com/Howard-23/attandance-system",
+    "liveUrl": "https://attandance-system.vercel.app/"
+  },
+
   {
     "title": "Task Management App",
     "description": "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
-    "icon": "✅",
+    "icon": "🛍️",
     "tech": ["Next.js", "React", "Tailwind CSS", "Local Storage"],
     "github": "https://github.com/yourusername/task-manager",
     "liveUrl": "https://yourtaskapp.com",

@@ -3,13 +3,13 @@
     "name": "John Howard P. Garcia",
     "title": "Front-End Developer & Virtual Assistant",
     "email": "johnhowardgarcia23@gmail.com",
-    "phone": "+63 XXX XXX XXXX",
+    "phone": "+639073170635",
     "location": "Philippines",
     "summary": "Results-driven Front-End Developer with expertise in building modern, responsive web applications using Next.js, React, and TypeScript. Experienced in providing virtual assistance services including email/chat management and Shopify store customization. Passionate about creating intuitive user experiences and delivering high-quality work that exceeds client expectations."
   },
   "experience": [
     {
-      "date": "2024 – Present",
+      "date": "2025 – Present",
       "role": "Front-End Developer",
       "company": "Freelance / Self-Employed",
       "description": "Develop custom web applications and websites for clients using modern technologies. Focus on creating responsive, accessible, and performant user interfaces.",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "date": "2023 – 2024",
+      "date": "2025 – Present",
       "role": "Virtual Assistant & Web Support Specialist",
       "company": "Remote E-Commerce Business",
       "description": "Provided comprehensive virtual assistance while supporting web operations. Managed customer communications and performed basic Shopify customizations.",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "date": "2022 – 2023",
+      "date": "2025 – Present",
       "role": "Junior Web Developer",
       "company": "Digital Solutions Agency",
       "description": "Assisted in the development of client websites and web applications. Gained hands-on experience with front-end technologies and industry best practices.",
@@ -50,31 +50,31 @@
   ],
   "education": [
     {
-      "degree": "Bachelor of Science in Information Technology",
-      "school": "University of the Philippines",
-      "year": "2023",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "school": "AMA Computer College",
+      "year": "2020 - 2024",
       "details": "Relevant coursework: Web Development, Database Management, Software Engineering, UI/UX Design"
     },
     {
-      "degree": "Web Development Bootcamp",
-      "school": "Online Certification",
-      "year": "2022",
+      "degree": "Web Development ",
+      "school": "Online",
+      "year": "2024 - 2025",
       "details": "Intensive program covering HTML, CSS, JavaScript, React, and Node.js"
     }
   ],
   "skills": {
-    "frontend": ["Next.js", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
-    "backend & tools": ["Node.js", "Git", "GitHub", "REST APIs", "JSON"],
-    "e-commerce": ["Shopify", "Liquid", "Store Management", "Product Listings"],
-    "soft skills": ["Communication", "Time Management", "Problem Solving", "Client Relations"]
+    "frontend": ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS",],
+    "backend & tools": ["Node.js", "Git", "GitHub"],
+    "e-commerce": ["Shopify Liquid",],
+    "soft skills": ["Time Management", "Problem Solving", "Client Relations"]
   },
   "projects": [
     {
       "title": "Professional Portfolio Website",
       "description": "A modern portfolio website showcasing projects and skills. Features dark/light mode, smooth animations, and responsive design.",
       "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "github": "https://github.com/Howard-23/Howard-23",
-      "liveUrl": "https://yourportfolio.com",
+      "github": "https://github.com/Howard-23/Howard",
+      "liveUrl": "https://howard-project.vercel.app/",
       "highlights": [
         "Implemented theme switching with persistent user preference",
         "Created smooth page transitions using Framer Motion",
@@ -82,6 +82,14 @@
         "Fully responsive design for all screen sizes"
       ]
     },
+    {
+      "title": "Attendance System",
+      "description": "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
+      "tech": ["Next.js", "Tailwind CSS","TypeScript"],
+      "github": "https://github.com/Howard-23/attandance-system",
+      "liveUrl": "https://attandance-system.vercel.app/"
+    },
+
     {
       "title": "E-Commerce Dashboard",
       "description": "A dashboard for managing online store operations with analytics, order tracking, and inventory management.",
@@ -93,23 +101,6 @@
         "Implemented responsive data tables",
         "Created reusable component library"
       ]
-    }
-  ],
-  "certifications": [
-    {
-      "name": "React - The Complete Guide",
-      "issuer": "Udemy",
-      "year": "2024"
-    },
-    {
-      "name": "Shopify Theme Development",
-      "issuer": "Shopify Partner Academy",
-      "year": "2023"
-    },
-    {
-      "name": "Responsive Web Design",
-      "issuer": "freeCodeCamp",
-      "year": "2022"
     }
   ],
   "languages": [

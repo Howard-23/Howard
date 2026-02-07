@@ -137,19 +137,24 @@ export default function Home() {
               padding: '2.5rem'
             }}>
               <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-                {/* Profile Image Placeholder */}
+                {/* Profile Image */}
                 <div style={{
                   width: '150px',
                   height: '150px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, var(--primary-500), var(--primary-600))',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '4rem',
-                  flexShrink: 0
+                  overflow: 'hidden',
+                  flexShrink: 0,
+                  border: '3px solid var(--primary-500)'
                 }}>
-                  👨‍💻
+                  <img 
+                    src="/profile.jpg" 
+                    alt="John Howard P. Garcia"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
                 </div>
                 
                 {/* About Text */}
@@ -184,15 +189,15 @@ export default function Home() {
                     borderTop: '1px solid var(--border)'
                   }}>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>3+</div>
+                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>1+</div>
                       <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Years Experience</div>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>20+</div>
+                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>8+</div>
                       <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Projects Completed</div>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>15+</div>
+                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>3+</div>
                       <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Happy Clients</div>
                     </div>
                   </div>
@@ -234,13 +239,13 @@ export default function Home() {
             <SkillCard 
               icon="⚙️"
               title="Backend & Tools"
-              skills={["Node.js", "Java", "Python", "Git", "REST APIs"]}
+              skills={["Node.js", "Java", "Python",]}
               level={75}
             />
             <SkillCard 
               icon="🛍️"
               title="E-Commerce"
-              skills={["Shopify", "Liquid", "Store Management", "Product Listings"]}
+              skills={["Shopify Liquid"]}
               level={80}
             />
             <SkillCard 
