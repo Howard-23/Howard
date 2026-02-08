@@ -17,9 +17,9 @@
     "title": "E-Commerce Dashboard",
     "description": "A comprehensive dashboard for managing online store operations. Features real-time analytics, order management, and inventory tracking with an intuitive user interface.",
     "icon": "📊",
-    "tech": ["React", "TypeScript", "Tailwind CSS", "Recharts"],
-    "github": "https://github.com/yourusername/ecommerce-dashboard",
-    "liveUrl": "https://yourdashboard.com",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],
+    "github": "https://github.com/Howard-23/e-commerce",
+    "liveUrl": "https://e-commerce-psi-dusky-70.vercel.app/",
     "highlights": [
       "Built responsive data visualizations with Recharts",
       "Implemented real-time data updates and state management",
@@ -38,12 +38,30 @@
   },
 
   {
+    "title": "Barangay System",
+    "description": "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
+    "tech": ["Next.js","Tailwind CSS","TypeScript"],
+    "github": "https://github.com/Howard-23/barangay",
+    "liveUrl": "https://barangay-three.vercel.app/"
+  },
+
+  {
+    "title": "Office Management System",
+    "description": "Helps a company and their Employee to track their duties and also to get the goal of the company",
+    "tech": ["Next.js","TypeScript","Tailwind CSS"],
+    "github": "https://github.com/Howard-23/office-management",
+    "liveUrl": "https://office-management-pi.vercel.app/login"
+  },
+
+
+
+  {
     "title": "Task Management App",
     "description": "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
     "icon": "🛍️",
-    "tech": ["Next.js", "React", "Tailwind CSS", "Local Storage"],
-    "github": "https://github.com/yourusername/task-manager",
-    "liveUrl": "https://yourtaskapp.com",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/Howard-23/Task-Manager",
+    "liveUrl": "https://task-manager-lime-theta-49.vercel.app/",
     "highlights": [
       "Implemented drag-and-drop functionality for task organization",
       "Built persistent storage using local storage for offline support",
@@ -55,11 +73,11 @@
     "title": "Shopify Landing Page",
     "description": "A custom landing page template designed for Shopify stores. Features sections for products, testimonials, and call-to-action buttons optimized for conversions.",
     "icon": "🛍️",
-    "tech": ["Shopify Liquid", "HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/yourusername/shopify-landing",
-    "liveUrl": "https://yourshopifystore.com",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/Howard-23/shopify-landing-page",
+    "liveUrl": "https://shopify-landing-page-omega.vercel.app/",
     "highlights": [
-      "Created customizable sections using Shopify Liquid",
+      "Created customizable sections using Nextjs",
       "Optimized for fast loading and SEO performance",
       "Designed mobile-first responsive layout",
       "Integrated with Shopify's native features and apps"
