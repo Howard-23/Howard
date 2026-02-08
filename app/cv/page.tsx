@@ -47,23 +47,36 @@ export default function CVPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1>{cvData.personalInfo.name}</h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+            <h1 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>{cvData.personalInfo.name}</h1>
+            <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
               {cvData.personalInfo.title}
             </p>
-            <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', color: 'var(--text-muted)' }}>
-              <a href={`mailto:${cvData.personalInfo.email}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+            <div 
+              className="cv-contact-info"
+              style={{ 
+                display: 'flex', 
+                gap: '0.75rem 1.5rem', 
+                justifyContent: 'center', 
+                flexWrap: 'wrap', 
+                color: 'var(--text-muted)',
+                fontSize: 'clamp(0.8125rem, 2vw, 0.9375rem)'
+              }}
+            >
+              <a 
+                href={`mailto:${cvData.personalInfo.email}`} 
+                style={{ color: 'inherit', textDecoration: 'none' }}
+              >
                 {cvData.personalInfo.email}
               </a>
               {cvData.personalInfo.phone && (
                 <>
-                  <span>•</span>
+                  <span style={{ display: 'none' }} className="cv-separator">•</span>
                   <span>{cvData.personalInfo.phone}</span>
                 </>
               )}
               {cvData.personalInfo.location && (
                 <>
-                  <span>•</span>
+                  <span style={{ display: 'none' }} className="cv-separator">•</span>
                   <span>{cvData.personalInfo.location}</span>
                 </>
               )}
@@ -223,11 +236,18 @@ export default function CVPage() {
             </h2>
             
             {isExpanded("skills") && (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
+              <div 
+                className="cv-skills-grid"
+                style={{ 
+                  display: 'grid', 
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', 
+                  gap: 'clamp(1rem, 3vw, 1.5rem)' 
+                }}
+              >
                 {Object.entries(cvData.skills).map(([category, items]) => (
                   <div key={category}>
                     <h4 style={{ 
-                      fontSize: '0.875rem', 
+                      fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', 
                       textTransform: 'uppercase', 
                       letterSpacing: '0.05em',
                       color: 'var(--text-muted)',
@@ -235,9 +255,15 @@ export default function CVPage() {
                     }}>
                       {category}
                     </h4>
-                    <div className="skill-tags">
+                    <div className="skill-tags" style={{ gap: '0.375rem' }}>
                       {Array.isArray(items) && items.map((skill, i) => (
-                        <span key={i} className="skill-tag">{skill}</span>
+                        <span 
+                          key={i} 
+                          className="skill-tag"
+                          style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}
+                        >
+                          {skill}
+                        </span>
                       ))}
                     </div>
                   </div>

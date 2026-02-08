@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import ThemeToggle from "@/components/ThemeToggle";
 import ProjectModal from "@/components/ProjectModal";
@@ -23,6 +23,32 @@ const staggerContainer: Variants = {
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Close mobile menu on resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <main>
@@ -38,6 +64,30 @@ export default function Home() {
             <a href="#experience" className="nav-link">Experience</a>
             <a href="#projects" className="nav-link">Projects</a>
             <a href="#contact" className="nav-link">Contact</a>
+            <ThemeToggle />
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <button 
+            className={`mobile-menu-btn ${mobileMenuOpen ? "active" : ""}`}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+        {/* Mobile Menu */}
+        <div className={`nav-links-mobile ${mobileMenuOpen ? "active" : ""}`}>
+          <a href="#about" className="nav-link" onClick={closeMobileMenu}>About</a>
+          <a href="#skills" className="nav-link" onClick={closeMobileMenu}>Skills</a>
+          <a href="#experience" className="nav-link" onClick={closeMobileMenu}>Experience</a>
+          <a href="#projects" className="nav-link" onClick={closeMobileMenu}>Projects</a>
+          <a href="#contact" className="nav-link" onClick={closeMobileMenu}>Contact</a>
+          <div style={{ marginTop: "1rem", padding: "1rem" }}>
             <ThemeToggle />
           </div>
         </div>
@@ -134,13 +184,19 @@ export default function Home() {
               background: 'var(--bg-elevated)',
               border: '1px solid var(--border)',
               borderRadius: '20px',
-              padding: '2.5rem'
+              padding: 'clamp(1.25rem, 4vw, 2.5rem)'
             }}>
-              <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+              <div style={{ 
+                display: 'flex', 
+                gap: 'clamp(1rem, 3vw, 2rem)', 
+                flexWrap: 'wrap', 
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
                 {/* Profile Image */}
                 <div style={{
-                  width: '150px',
-                  height: '150px',
+                  width: 'clamp(100px, 25vw, 150px)',
+                  height: 'clamp(100px, 25vw, 150px)',
                   borderRadius: '50%',
                   overflow: 'hidden',
                   flexShrink: 0,
@@ -158,9 +214,9 @@ export default function Home() {
                 </div>
                 
                 {/* About Text */}
-                <div style={{ flex: 1, minWidth: '250px' }}>
+                <div style={{ flex: 1, minWidth: 'min(100%, 250px)', textAlign: 'center' }}>
                   <h3 style={{ 
-                    fontSize: '1.5rem', 
+                    fontSize: 'clamp(1.125rem, 4vw, 1.5rem)', 
                     fontWeight: 600, 
                     marginBottom: '1rem',
                     background: 'linear-gradient(135deg, var(--primary-500), #a855f7)',
@@ -181,24 +237,24 @@ export default function Home() {
                   </p>
                   
                   {/* Quick Stats */}
-                  <div style={{ 
+                  <div className="about-stats" style={{ 
                     display: 'grid', 
-                    gridTemplateColumns: 'repeat(3, 1fr)', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', 
                     gap: '1rem',
                     paddingTop: '1.5rem',
                     borderTop: '1px solid var(--border)'
                   }}>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>1+</div>
-                      <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Years Experience</div>
+                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>1+</div>
+                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Years Experience</div>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>8+</div>
-                      <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Projects Completed</div>
+                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>8+</div>
+                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Projects Completed</div>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary-500)' }}>3+</div>
-                      <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Happy Clients</div>
+                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>3+</div>
+                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Happy Clients</div>
                     </div>
                   </div>
                 </div>
@@ -400,9 +456,19 @@ export default function Home() {
           left: 0;
           right: 0;
           z-index: 100;
-          background: rgba(15, 23, 42, 0.8);
+          background: var(--bg);
           backdrop-filter: blur(12px);
           border-bottom: 1px solid var(--border);
+        }
+        
+        @supports (backdrop-filter: blur(12px)) {
+          .nav {
+            background: rgba(15, 23, 42, 0.8);
+          }
+          
+          :global(.light) .nav {
+            background: rgba(248, 250, 252, 0.8);
+          }
         }
         
         .nav-container {
