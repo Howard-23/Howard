@@ -145,7 +145,7 @@
 
    {
     "title": "Prescription Reader",
-    "description": "It helps all the elderly and pharmacist to read the prescription of the Doctor's that It's Hard to read",|
+    "description": "It helps all the elderly and pharmacist to read the prescription of the Doctor's that It's Hard to read",
     "tech": ["Next.js","Tailwind CSS","TypeScript"],
     "github": "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
     "liveUrl": "https://vercel.com/howards-projects-047d6dea/medi-scan-prescription-scanner"
