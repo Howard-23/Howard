@@ -70,7 +70,7 @@
     "icon": "💊",
     "tech": ["Next.js","Tailwind CSS","TypeScript"],
     "github": "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
-    "liveUrl": "https://vercel.com/howards-projects-047d6dea/medi-scan-prescription-scanner"
+    "liveUrl": "https://medi-scan-prescription-scanner.vercel.app/"
   },
 
   {
