@@ -40,6 +40,7 @@
   {
     "title": "Barangay System",
     "description": "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
+    "icon": "🏘️",
     "tech": ["Next.js","Tailwind CSS","TypeScript"],
     "github": "https://github.com/Howard-23/barangay",
     "liveUrl": "https://barangay-three.vercel.app/"
@@ -48,12 +49,29 @@
   {
     "title": "Office Management System",
     "description": "Helps a company and their Employee to track their duties and also to get the goal of the company",
+    "icon": "🏢",
     "tech": ["Next.js","TypeScript","Tailwind CSS"],
     "github": "https://github.com/Howard-23/office-management",
     "liveUrl": "https://office-management-pi.vercel.app/login"
   },
 
+  {
+   "title": "CCTV Management System",
+   "description": "A modern cctv management that helps you to track and report an accident that it will auto detect",
+   "icon": "📹",
+   "tech": ["Next.js","Python","Tailwind CSS","TypeScript"],
+   "github": "https://github.com/Howard-23/CCTV-Management-System",
+   "liveUrl": "https://vercel.com/howards-projects-047d6dea/cctv-management-system-gcyl"
+  },
 
+  {
+    "title": "Prescription Reader",
+    "description": "It helps all the elderly and pharmacist to read the prescription of the Doctor's that It's Hard to read",
+    "icon": "💊",
+    "tech": ["Next.js","Tailwind CSS","TypeScript"],
+    "github": "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
+    "liveUrl": "https://vercel.com/howards-projects-047d6dea/medi-scan-prescription-scanner"
+  },
 
   {
     "title": "Task Management App",
@@ -69,6 +87,7 @@
       "Added filtering and sorting capabilities for task management"
     ]
   },
+  
   {
     "title": "Shopify Landing Page",
     "description": "A custom landing page template designed for Shopify stores. Features sections for products, testimonials, and call-to-action buttons optimized for conversions.",
