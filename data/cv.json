@@ -11,7 +11,7 @@
     {
       "date": "2025 – Present",
       "role": "Front-End Developer",
-      "company": "Freelance / Self-Employed",
+      "company": "PrimeX Ventures",
       "description": "Develop custom web applications and websites for clients using modern technologies. Focus on creating responsive, accessible, and performant user interfaces.",
       "responsibilities": [
         "Build responsive web applications using Next.js, React, and TypeScript",
@@ -24,7 +24,7 @@
     {
       "date": "2025 – 2025",
       "role": "Virtual Assistant & Web Support Specialist",
-      "company": "Remote E-Commerce Business",
+      "company": "Freelance / Self-Employed",
       "description": "Provided comprehensive virtual assistance while supporting web operations. Managed customer communications and performed basic Shopify customizations.",
       "responsibilities": [
         "Managed email and live chat support for customer inquiries",
@@ -37,7 +37,7 @@
     {
       "date": "2025 – Present",
       "role": "Junior Web Developer",
-      "company": "Digital Solutions Agency",
+      "company": "Freelance / Self-Employed",
       "description": "Assisted in the development of client websites and web applications. Gained hands-on experience with front-end technologies and industry best practices.",
       "responsibilities": [
         "Developed responsive web pages using HTML, CSS, and JavaScript",
@@ -140,7 +140,7 @@
    "description": "A modern cctv management that helps you to track and report an accident that it will auto detect",
    "tech": ["Next.js","Python","Tailwind CSS","TypeScript"],
    "github": "https://github.com/Howard-23/CCTV-Management-System",
-   "liveUrl": "https://vercel.com/howards-projects-047d6dea/cctv-management-system-gcyl"
+   "liveUrl": "https://cctv-management-system-gcyl.vercel.app/dashboard"
   },
 
    {

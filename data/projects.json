@@ -61,7 +61,7 @@
    "icon": "📹",
    "tech": ["Next.js","Python","Tailwind CSS","TypeScript"],
    "github": "https://github.com/Howard-23/CCTV-Management-System",
-   "liveUrl": "https://vercel.com/howards-projects-047d6dea/cctv-management-system-gcyl"
+   "liveUrl": "https://cctv-management-system-gcyl.vercel.app/dashboard"
   },
 
   {
