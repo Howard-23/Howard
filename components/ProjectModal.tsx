@@ -1,13 +1,29 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-export default function ProjectModal({ project, onClose }) {
-  const closeRef = useRef(null);
+interface Project {
+  title: string;
+  description: string;
+  icon?: string;
+  tech?: string[];
+  highlights?: string[];
+  github?: string;
+  liveUrl?: string;
+}
+
+interface ProjectModalProps {
+  project: Project | null;
+  onClose: () => void;
+}
+
+export default function ProjectModal({ project, onClose }: ProjectModalProps) {
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!project) return;
-    const onKey = (e) => {
+    const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose?.();
     };
     document.addEventListener("keydown", onKey);
