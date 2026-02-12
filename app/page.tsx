@@ -108,7 +108,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.div variants={fadeInUp} className="hero-subtitle">
-                Front-End Developer & Virtual Assistant
+                Front-End Developer
               </motion.div>
               
               <motion.div variants={fadeInUp} className="hero-description">

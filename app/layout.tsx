@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "John Howard P. Garcia | Front-End Developer & Virtual Assistant",
+  title: "John Howard P. Garcia | Front-End Developer",
   description:
     "Professional Front-End Developer specializing in Next.js, React, and TypeScript. Experienced in building modern web applications and providing virtual assistance services.",
   keywords: [
@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "John Howard P. Garcia",
-              jobTitle: "Front-End Developer & Virtual Assistant",
+              jobTitle: "Front-End Developer",
               url: "https://yourdomain.com",
               email: "johnhowardgarcia23@gmail.com",
               sameAs: [
