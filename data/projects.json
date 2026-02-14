@@ -31,7 +31,7 @@
   {
     "title": "Attendance System",
     "description": "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
-    "icon": "✅",
+    "icon": "⏰",
     "tech": ["Next.js","Tailwind CSS","TypeScript"],
     "github": "https://github.com/Howard-23/attandance-system",
     "liveUrl": "https://attandance-system.vercel.app/"
@@ -58,7 +58,7 @@
   {
    "title": "CCTV Management System",
    "description": "A modern cctv management that helps you to track and report an accident that it will auto detect",
-   "icon": "📹",
+   "icon": "🎥",
    "tech": ["Next.js","Python","Tailwind CSS","TypeScript"],
    "github": "https://github.com/Howard-23/CCTV-Management-System",
    "liveUrl": "https://cctv-management-system-gcyl.vercel.app/dashboard"
@@ -67,7 +67,7 @@
   {
     "title": "Prescription Reader",
     "description": "It helps all the elderly and pharmacist to read the prescription of the Doctor's that It's Hard to read",
-    "icon": "💊",
+    "icon": "🏥",
     "tech": ["Next.js","Tailwind CSS","TypeScript"],
     "github": "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
     "liveUrl": "https://medi-scan-prescription-scanner.vercel.app/"
@@ -76,7 +76,7 @@
   {
     "title": "Task Management App",
     "description": "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
-    "icon": "🛍️",
+    "icon": "✅",
     "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
     "github": "https://github.com/Howard-23/Task-Manager",
     "liveUrl": "https://task-manager-lime-theta-49.vercel.app/",
@@ -100,6 +100,20 @@
       "Optimized for fast loading and SEO performance",
       "Designed mobile-first responsive layout",
       "Integrated with Shopify's native features and apps"
+    ]
+  },
+  {
+    "title": "Dental Management System",
+    "description": "A comprehensive dental clinic management system for scheduling appointments, managing patient records, tracking treatments, and handling billing. Streamlines clinic operations with an intuitive dashboard.",
+    "icon": "🦷",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/Howard-23/Dental-Management-System",
+    "liveUrl": "https://dental-management-system-rose.vercel.app/",
+    "highlights": [
+      "Built patient appointment scheduling with calendar integration",
+      "Implemented secure patient record management system",
+      "Created treatment tracking and history logs",
+      "Designed responsive dashboard for clinic staff"
     ]
   }
 ]

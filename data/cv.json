@@ -163,6 +163,19 @@
         "Implemented responsive data tables",
         "Created reusable component library"
       ]
+    },
+    {
+      "title": "Dental Management System",
+      "description": "A comprehensive dental clinic management system for scheduling appointments, managing patient records, tracking treatments, and handling billing. Streamlines clinic operations with an intuitive dashboard.",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "github": "https://github.com/Howard-23/Dental-Management-System",
+      "liveUrl": "https://dental-management-system-rose.vercel.app/",
+      "highlights": [
+        "Built patient appointment scheduling with calendar integration",
+        "Implemented secure patient record management system",
+        "Created treatment tracking and history logs",
+        "Designed responsive dashboard for clinic staff"
+      ]
     }
   ],
   "languages": [
