@@ -176,6 +176,55 @@
         "Created treatment tracking and history logs",
         "Designed responsive dashboard for clinic staff"
       ]
+    },
+    {
+      "title": "Event Sparks",
+      "description": "A dynamic event management platform built with Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Event-Spark",
+      "liveUrl": "https://event-spark-two.vercel.app/"
+    },
+    {
+      "title": "Habit Harbor",
+      "description": "A habit tracking application created using Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Habit-Harbor",
+      "liveUrl": "https://habit-harbor.vercel.app/"
+    },
+    {
+      "title": "Course Craft",
+      "description": "An educational course platform built with Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Course-Craft",
+      "liveUrl": "https://course-craft-ashy.vercel.app/"
+    },
+    {
+      "title": "Menu Muse",
+      "description": "A restaurant menu showcase created using Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Menu-Muse",
+      "liveUrl": "https://menu-muse.vercel.app/"
+    },
+    {
+      "title": "Pulse Studio",
+      "description": "A creative studio site built with Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Pulse-Studio",
+      "liveUrl": "https://pulse-studio-xi.vercel.app/"
+    },
+    {
+      "title": "Insight Board",
+      "description": "A dashboard application developed using Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Insight-Board",
+      "liveUrl": "https://insight-board-eight.vercel.app/"
+    },
+    {
+      "title": "Brandkit",
+      "description": "A branding toolkit platform built with Next.js, CSS3, and HTML5.",
+      "tech": ["Next.js", "CSS3", "HTML5"],
+      "github": "https://github.com/Howard-23/Brand-Kit",
+      "liveUrl": "https://brand-kit-nine.vercel.app/"
     }
   ],
   "languages": [
