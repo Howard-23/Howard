@@ -21,6 +21,21 @@ const staggerContainer: Variants = {
   }
 };
 
+const technicalStacks = [
+  { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
+  { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
+  { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
+  { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
+  { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
+  { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
+  { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
+  { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" }
+];
+
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -264,8 +279,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Technical Stack Section */}
       <section id="skills" className="section">
+        <div className="container">
+          <motion.div
+            className="tech-stack-panel"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <div className="tech-stack-header">
+              <h2>Technical Stacks</h2>
+            </div>
+
+            <div className="tech-stack-list">
+              {technicalStacks.map((stack) => (
+                <motion.div key={stack.name} className="tech-stack-chip" variants={fadeInUp}>
+                  <img
+                    src={stack.logo}
+                    alt={`${stack.name} logo`}
+                    width={20}
+                    height={20}
+                    loading="lazy"
+                  />
+                  <span>{stack.name}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills-legacy" className="section legacy-skills">
         <div className="container">
           <div className="section-header">
             <motion.div

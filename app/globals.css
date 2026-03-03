@@ -361,6 +361,81 @@ body {
    SKILLS SECTION
    ============================================ */
 
+.legacy-skills {
+  display: none;
+}
+
+.tech-stack-panel {
+  background:
+    linear-gradient(180deg, rgba(99, 102, 241, 0.12), rgba(99, 102, 241, 0.04)),
+    var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.tech-stack-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.tech-stack-header h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tech-stack-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.65rem;
+}
+
+.tech-stack-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--bg);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 0.42rem 0.7rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  width: 100%;
+  min-height: 48px;
+}
+
+.tech-stack-chip:hover {
+  border-color: var(--primary-500);
+  color: var(--text);
+}
+
+.tech-stack-chip img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.light .tech-stack-panel {
+  background:
+    linear-gradient(180deg, rgba(99, 102, 241, 0.08), rgba(99, 102, 241, 0.02)),
+    var(--bg-elevated);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1142,6 +1217,35 @@ body {
   }
   
   /* Skills Section */
+  .tech-stack-panel {
+    padding: 0.9rem;
+    border-radius: 10px;
+  }
+
+  .tech-stack-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-stack-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .tech-stack-chip {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.55rem;
+    gap: 0.45rem;
+  }
+
+  .tech-stack-chip img {
+    width: 18px;
+    height: 18px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
