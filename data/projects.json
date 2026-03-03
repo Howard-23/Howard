@@ -1,175 +1,239 @@
 [
-  {
-    "title": "Professional Portfolio",
-    "description": "A modern, responsive portfolio website built with Next.js and TypeScript. Features dark/light mode toggle, smooth animations, and a clean, professional design optimized for showcasing work.",
-    "icon": "💼",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    "github": "https://github.com/Howard-23/Howard",
-    "liveUrl": "https://howard-project.vercel.app/",
-    "highlights": [
-      "Implemented seamless dark/light mode with local storage persistence",
-      "Created fluid page transitions and micro-interactions using Framer Motion",
-      "Optimized performance with Next.js Image and static generation",
-      "Fully responsive design that works beautifully on all devices"
-    ]
-  },
-  {
-    "title": "E-Commerce Dashboard",
-    "description": "A comprehensive dashboard for managing online store operations. Features real-time analytics, order management, and inventory tracking with an intuitive user interface.",
-    "icon": "📊",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],
-    "github": "https://github.com/Howard-23/e-commerce",
-    "liveUrl": "https://e-commerce-psi-dusky-70.vercel.app/",
-    "highlights": [
-      "Built responsive data visualizations with Recharts",
-      "Implemented real-time data updates and state management",
-      "Created reusable component library for consistent UI",
-      "Integrated with REST APIs for live data fetching"
-    ]
-  },
-
-  {
-    "title": "Attendance System",
-    "description": "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
-    "icon": "⏰",
-    "tech": ["Next.js","Tailwind CSS","TypeScript"],
-    "github": "https://github.com/Howard-23/attandance-system",
-    "liveUrl": "https://attandance-system.vercel.app/"
-  },
-
-  {
-    "title": "Barangay System",
-    "description": "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
-    "icon": "🏘️",
-    "tech": ["Next.js","Tailwind CSS","TypeScript"],
-    "github": "https://github.com/Howard-23/barangay",
-    "liveUrl": "https://barangay-three.vercel.app/"
-  },
-
-  {
-    "title": "Office Management System",
-    "description": "Helps a company and their Employee to track their duties and also to get the goal of the company",
-    "icon": "🏢",
-    "tech": ["Next.js","TypeScript","Tailwind CSS"],
-    "github": "https://github.com/Howard-23/office-management",
-    "liveUrl": "https://office-management-pi.vercel.app/login"
-  },
-
-  {
-   "title": "CCTV Management System",
-   "description": "A modern cctv management that helps you to track and report an accident that it will auto detect",
-   "icon": "🎥",
-   "tech": ["Next.js","Python","Tailwind CSS","TypeScript"],
-   "github": "https://github.com/Howard-23/CCTV-Management-System",
-   "liveUrl": "https://cctv-management-system-gcyl.vercel.app/dashboard"
-  },
-
-  {
-    "title": "Prescription Reader",
-    "description": "It helps all the elderly and pharmacist to read the prescription of the Doctor's that It's Hard to read",
-    "icon": "🏥",
-    "tech": ["Next.js","Tailwind CSS","TypeScript"],
-    "github": "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
-    "liveUrl": "https://medi-scan-prescription-scanner.vercel.app/"
-  },
-
-  {
-    "title": "Task Management App",
-    "description": "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
-    "icon": "✅",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/Howard-23/Task-Manager",
-    "liveUrl": "https://task-manager-lime-theta-49.vercel.app/",
-    "highlights": [
-      "Implemented drag-and-drop functionality for task organization",
-      "Built persistent storage using local storage for offline support",
-      "Created intuitive UI with priority indicators and progress bars",
-      "Added filtering and sorting capabilities for task management"
-    ]
-  },
-  
-  {
-    "title": "Shopify Landing Page",
-    "description": "A custom landing page template designed for Shopify stores. Features sections for products, testimonials, and call-to-action buttons optimized for conversions.",
-    "icon": "🛍️",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/Howard-23/shopify-landing-page",
-    "liveUrl": "https://shopify-landing-page-omega.vercel.app/",
-    "highlights": [
-      "Created customizable sections using Nextjs",
-      "Optimized for fast loading and SEO performance",
-      "Designed mobile-first responsive layout",
-      "Integrated with Shopify's native features and apps"
-    ]
-  },
-  {
-    "title": "Dental Management System",
-    "description": "A comprehensive dental clinic management system for scheduling appointments, managing patient records, tracking treatments, and handling billing. Streamlines clinic operations with an intuitive dashboard.",
-    "icon": "🦷",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/Howard-23/Dental-Management-System",
-    "liveUrl": "https://dental-management-system-rose.vercel.app/",
-    "highlights": [
-      "Built patient appointment scheduling with calendar integration",
-      "Implemented secure patient record management system",
-      "Created treatment tracking and history logs",
-      "Designed responsive dashboard for clinic staff"
-    ]
-  },
-  {
-    "title": "Event Sparks",
-    "description": "A dynamic event management platform built with Next.js, CSS3, and HTML5.",
-    "icon": "🎉",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Event-Spark",
-    "liveUrl": "https://event-spark-two.vercel.app/"
-  },
-  {
-    "title": "Habit Harbor",
-    "description": "A habit tracking application created using Next.js, CSS3, and HTML5.",
-    "icon": "📈",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Habit-Harbor",
-    "liveUrl": "https://habit-harbor.vercel.app/"
-  },
-  {
-    "title": "Course Craft",
-    "description": "An educational course platform built with Next.js, CSS3, and HTML5.",
-    "icon": "🎓",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Course-Craft",
-    "liveUrl": "https://course-craft-ashy.vercel.app/"
-  },
-  {
-    "title": "Menu Muse",
-    "description": "A restaurant menu showcase created using Next.js, CSS3, and HTML5.",
-    "icon": "🍽️",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Menu-Muse",
-    "liveUrl": "https://menu-muse.vercel.app/"
-  },
-  {
-    "title": "Pulse Studio",
-    "description": "A creative studio site built with Next.js, CSS3, and HTML5.",
-    "icon": "🎧",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Pulse-Studio",
-    "liveUrl": "https://pulse-studio-xi.vercel.app/"
-  },
-  {
-    "title": "Insight Board",
-    "description": "A dashboard application developed using Next.js, CSS3, and HTML5.",
-    "icon": "💡",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Insight-Board",
-    "liveUrl": "https://insight-board-eight.vercel.app/"
-  },
-  {
-    "title": "Brandkit",
-    "description": "A branding toolkit platform built with Next.js, CSS3, and HTML5.",
-    "icon": "🧰",
-    "tech": ["Next.js", "CSS3", "HTML5"],
-    "github": "https://github.com/Howard-23/Brand-Kit",
-    "liveUrl": "https://brand-kit-nine.vercel.app/"
-  }
+    {
+        "title":  "Professional Portfolio",
+        "description":  "A modern, responsive portfolio website built with Next.js and TypeScript. Features dark/light mode toggle, smooth animations, and a clean, professional design optimized for showcasing work.",
+        "icon":  "https://img.icons8.com/color/96/briefcase.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS",
+                     "Framer Motion"
+                 ],
+        "github":  "https://github.com/Howard-23/Howard",
+        "liveUrl":  "https://howard-project.vercel.app/",
+        "highlights":  [
+                           "Implemented seamless dark/light mode with local storage persistence",
+                           "Created fluid page transitions and micro-interactions using Framer Motion",
+                           "Optimized performance with Next.js Image and static generation",
+                           "Fully responsive design that works beautifully on all devices"
+                       ]
+    },
+    {
+        "title":  "E-Commerce Dashboard",
+        "description":  "A comprehensive dashboard for managing online store operations. Features real-time analytics, order management, and inventory tracking with an intuitive user interface.",
+        "icon":  "https://img.icons8.com/color/96/combo-chart.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS",
+                     "Recharts"
+                 ],
+        "github":  "https://github.com/Howard-23/e-commerce",
+        "liveUrl":  "https://e-commerce-psi-dusky-70.vercel.app/",
+        "highlights":  [
+                           "Built responsive data visualizations with Recharts",
+                           "Implemented real-time data updates and state management",
+                           "Created reusable component library for consistent UI",
+                           "Integrated with REST APIs for live data fetching"
+                       ]
+    },
+    {
+        "title":  "Attendance System",
+        "description":  "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
+        "icon":  "https://img.icons8.com/color/96/calendar.png",
+        "tech":  [
+                     "Next.js",
+                     "Tailwind CSS",
+                     "TypeScript"
+                 ],
+        "github":  "https://github.com/Howard-23/attandance-system",
+        "liveUrl":  "https://attandance-system.vercel.app/"
+    },
+    {
+        "title":  "Barangay System",
+        "description":  "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
+        "icon":  "https://img.icons8.com/color/96/city.png",
+        "tech":  [
+                     "Next.js",
+                     "Tailwind CSS",
+                     "TypeScript"
+                 ],
+        "github":  "https://github.com/Howard-23/barangay",
+        "liveUrl":  "https://barangay-three.vercel.app/"
+    },
+    {
+        "title":  "Office Management System",
+        "description":  "Helps a company and their Employee to track their duties and also to get the goal of the company",
+        "icon":  "https://img.icons8.com/color/96/office.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS"
+                 ],
+        "github":  "https://github.com/Howard-23/office-management",
+        "liveUrl":  "https://office-management-pi.vercel.app/login"
+    },
+    {
+        "title":  "CCTV Management System",
+        "description":  "A modern cctv management that helps you to track and report an accident that it will auto detect",
+        "icon":  "https://img.icons8.com/color/96/webcam.png",
+        "tech":  [
+                     "Next.js",
+                     "Python",
+                     "Tailwind CSS",
+                     "TypeScript"
+                 ],
+        "github":  "https://github.com/Howard-23/CCTV-Management-System",
+        "liveUrl":  "https://cctv-management-system-gcyl.vercel.app/dashboard"
+    },
+    {
+        "title":  "Prescription Reader",
+        "description":  "It helps all the elderly and pharmacist to read the prescription of the Doctor\u0027s that It\u0027s Hard to read",
+        "icon":  "https://img.icons8.com/color/96/pill.png",
+        "tech":  [
+                     "Next.js",
+                     "Tailwind CSS",
+                     "TypeScript"
+                 ],
+        "github":  "https://github.com/Howard-23/Medi-Scan-Prescription-Scanner",
+        "liveUrl":  "https://medi-scan-prescription-scanner.vercel.app/"
+    },
+    {
+        "title":  "Task Management App",
+        "description":  "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
+        "icon":  "https://img.icons8.com/color/96/todo-list.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS"
+                 ],
+        "github":  "https://github.com/Howard-23/Task-Manager",
+        "liveUrl":  "https://task-manager-lime-theta-49.vercel.app/",
+        "highlights":  [
+                           "Implemented drag-and-drop functionality for task organization",
+                           "Built persistent storage using local storage for offline support",
+                           "Created intuitive UI with priority indicators and progress bars",
+                           "Added filtering and sorting capabilities for task management"
+                       ]
+    },
+    {
+        "title":  "Shopify Landing Page",
+        "description":  "A custom landing page template designed for Shopify stores. Features sections for products, testimonials, and call-to-action buttons optimized for conversions.",
+        "icon":  "https://img.icons8.com/color/96/shopping-bag.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS"
+                 ],
+        "github":  "https://github.com/Howard-23/shopify-landing-page",
+        "liveUrl":  "https://shopify-landing-page-omega.vercel.app/",
+        "highlights":  [
+                           "Created customizable sections using Nextjs",
+                           "Optimized for fast loading and SEO performance",
+                           "Designed mobile-first responsive layout",
+                           "Integrated with Shopify\u0027s native features and apps"
+                       ]
+    },
+    {
+        "title":  "Dental Management System",
+        "description":  "A comprehensive dental clinic management system for scheduling appointments, managing patient records, tracking treatments, and handling billing. Streamlines clinic operations with an intuitive dashboard.",
+        "icon":  "https://img.icons8.com/color/96/tooth.png",
+        "tech":  [
+                     "Next.js",
+                     "TypeScript",
+                     "Tailwind CSS"
+                 ],
+        "github":  "https://github.com/Howard-23/Dental-Management-System",
+        "liveUrl":  "https://dental-management-system-rose.vercel.app/",
+        "highlights":  [
+                           "Built patient appointment scheduling with calendar integration",
+                           "Implemented secure patient record management system",
+                           "Created treatment tracking and history logs",
+                           "Designed responsive dashboard for clinic staff"
+                       ]
+    },
+    {
+        "title":  "Event Sparks",
+        "description":  "A dynamic event management platform built with Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/confetti.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Event-Spark",
+        "liveUrl":  "https://event-spark-two.vercel.app/"
+    },
+    {
+        "title":  "Habit Harbor",
+        "description":  "A habit tracking application created using Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/goal.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Habit-Harbor",
+        "liveUrl":  "https://habit-harbor.vercel.app/"
+    },
+    {
+        "title":  "Course Craft",
+        "description":  "An educational course platform built with Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/training.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Course-Craft",
+        "liveUrl":  "https://course-craft-ashy.vercel.app/"
+    },
+    {
+        "title":  "Menu Muse",
+        "description":  "A restaurant menu showcase created using Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/restaurant-menu.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Menu-Muse",
+        "liveUrl":  "https://menu-muse.vercel.app/"
+    },
+    {
+        "title":  "Pulse Studio",
+        "description":  "A creative studio site built with Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/audio-wave.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Pulse-Studio",
+        "liveUrl":  "https://pulse-studio-xi.vercel.app/"
+    },
+    {
+        "title":  "Insight Board",
+        "description":  "A dashboard application developed using Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/line-chart.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Insight-Board",
+        "liveUrl":  "https://insight-board-eight.vercel.app/"
+    },
+    {
+        "title":  "Brandkit",
+        "description":  "A branding toolkit platform built with Next.js, CSS3, and HTML5.",
+        "icon":  "https://img.icons8.com/color/96/color-palette.png",
+        "tech":  [
+                     "Next.js",
+                     "CSS3",
+                     "HTML5"
+                 ],
+        "github":  "https://github.com/Howard-23/Brand-Kit",
+        "liveUrl":  "https://brand-kit-nine.vercel.app/"
+    }
 ]

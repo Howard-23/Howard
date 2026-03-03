@@ -36,6 +36,10 @@ const technicalStacks = [
   { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" }
 ];
 
+function isImageIcon(icon?: string) {
+  return typeof icon === "string" && /^(https?:\/\/|\/)/.test(icon);
+}
+
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -431,7 +435,16 @@ export default function Home() {
                 whileHover={{ y: -4 }}
               >
                 <div className="project-image">
-                  {project.icon || "🚀"}
+                  {isImageIcon(project.icon) ? (
+                    <img
+                      src={project.icon}
+                      alt={`${project.title} logo`}
+                      className="project-icon-logo"
+                      loading="lazy"
+                    />
+                  ) : (
+                    project.icon || "🚀"
+                  )}
                 </div>
                 <div className="project-content">
                   <h3 className="project-title">{project.title}</h3>
@@ -725,3 +738,4 @@ function ContactForm() {
       `}</style>
     </div>
   ); }
+

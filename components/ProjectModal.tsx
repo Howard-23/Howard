@@ -18,6 +18,10 @@ interface ProjectModalProps {
   onClose: () => void;
 }
 
+function isImageIcon(icon?: string) {
+  return typeof icon === "string" && /^(https?:\/\/|\/)/.test(icon);
+}
+
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -88,7 +92,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               marginBottom: 'clamp(1rem, 3vw, 1.5rem)'
             }}
           >
-            {project.icon || "🚀"}
+            {isImageIcon(project.icon) ? (
+              <img
+                src={project.icon}
+                alt={`${project.title} logo`}
+                className="modal-project-icon-logo"
+                loading="lazy"
+              />
+            ) : (
+              project.icon || "🚀"
+            )}
           </div>
 
           {/* Description */}
@@ -200,3 +213,4 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     </motion.div>
   );
 }
+

@@ -672,6 +672,31 @@ body {
   background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.4));
 }
 
+.project-image > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-icon-logo {
+  width: clamp(56px, 16vw, 76px);
+  height: clamp(56px, 16vw, 76px);
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 14px;
+  padding: 0.6rem;
+  box-shadow: var(--shadow-md);
+}
+
+.modal-project-icon-logo {
+  width: clamp(88px, 18vw, 128px);
+  height: clamp(88px, 18vw, 128px);
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  padding: 0.9rem;
+  box-shadow: var(--shadow-lg);
+}
+
 .project-content {
   padding: 1.5rem;
 }
