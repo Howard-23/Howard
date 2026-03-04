@@ -22,14 +22,17 @@ const staggerContainer: Variants = {
 };
 
 const technicalStacks = [
+  { name: "Next.js", logo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF" },
   { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
   { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
   { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
+  { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB" },
   { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
   { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
   { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
+  { name: "Flutter", logo: "https://cdn.simpleicons.org/flutter/02569B" },
   { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
   { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
@@ -127,7 +130,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.div variants={fadeInUp} className="hero-subtitle">
-                Front-End Developer
+                Fullstack Developer & Mobile Developer
               </motion.div>
               
               <motion.div variants={fadeInUp} className="hero-description">
@@ -246,7 +249,7 @@ export default function Home() {
                     John Howard P. Garcia
                   </h3>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1rem' }}>
-                    I&apos;m a passionate Front-End Developer and Virtual Assistant based in the Philippines. 
+                    I&apos;m a passionate Fullstack Developer and Mobile Developer based in the Philippines. 
                     With a strong foundation in modern web technologies and a keen eye for detail, 
                     I help businesses establish their digital presence and streamline their operations.
                   </p>
