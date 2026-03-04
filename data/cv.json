@@ -5,7 +5,7 @@
     "email": "johnhowardgarcia23@gmail.com",
     "phone": "+639073170635",
     "location": "Philippines",
-    "summary": "Results-driven Front-End Developer with expertise in building modern, responsive web applications using Next.js, React, CSS3, HTML5, and TypeScript. Experienced in providing virtual assistance services including email/chat management and Shopify store customization. Passionate about creating intuitive user experiences and delivering high-quality work that exceeds client expectations."
+    "summary": "Results-driven Front-End Developer with expertise in building modern, responsive web applications using Next.js, React, CSS3, HTML5, and TypeScript & Building Mobile Application using Flutter. Experienced in providing virtual assistance services including email/chat management and Shopify store customization. Passionate about creating intuitive user experiences and delivering high-quality work that exceeds client expectations."
   },
   "experience": [
     {
@@ -15,6 +15,7 @@
       "description": "Develop custom web applications and websites for clients using modern technologies. Focus on creating responsive, accessible, and performant user interfaces.",
       "responsibilities": [
         "Build responsive web applications using Next.js, React, and TypeScript",
+        "Build a Mobile Application using Flutter",
         "Implement modern UI/UX designs with Tailwind CSS and Framer Motion",
         "Optimize website performance and SEO for better search rankings",
         "Collaborate with clients to understand requirements and deliver solutions",
