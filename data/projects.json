@@ -68,7 +68,10 @@
         "tech":  [
                      "Next.js",
                      "TypeScript",
-                     "Tailwind CSS"
+                     "Tailwind CSS",
+                     "Laravel PostgreSQL",
+                     "Firebase",
+                     "Neon"
                  ],
         "github":  "https://github.com/Howard-23/office-management",
         "liveUrl":  "https://office-management-pi.vercel.app/login"
