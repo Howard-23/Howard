@@ -2,7 +2,7 @@
     {
         "title":  "Professional Portfolio",
         "description":  "A modern, responsive portfolio website built with Next.js and TypeScript. Features dark/light mode toggle, smooth animations, and a clean, professional design optimized for showcasing work.",
-        "icon":  "https://img.icons8.com/color/96/briefcase.png",
+        "icon":  "/project-logos/professional-portfolio.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -21,7 +21,7 @@
     {
         "title":  "E-Commerce Dashboard",
         "description":  "A comprehensive dashboard for managing online store operations. Features real-time analytics, order management, and inventory tracking with an intuitive user interface.",
-        "icon":  "https://img.icons8.com/color/96/combo-chart.png",
+        "icon":  "/project-logos/ecommerce-dashboard.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -40,7 +40,7 @@
     {
         "title":  "Attendance System",
         "description":  "A New Attendance Monitoring that helps a company and the employees to monitor their attendance",
-        "icon":  "https://img.icons8.com/color/96/calendar.png",
+        "icon":  "/project-logos/attendance-system.svg",
         "tech":  [
                      "Next.js",
                      "Tailwind CSS",
@@ -52,7 +52,7 @@
     {
         "title":  "Barangay System",
         "description":  "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
-        "icon":  "https://img.icons8.com/color/96/city.png",
+        "icon":  "/project-logos/barangay-system.svg",
         "tech":  [
                      "Next.js",
                      "Tailwind CSS",
@@ -68,7 +68,7 @@
     {
         "title":  "Office Management System",
         "description":  "Helps a company and their Employee to track their duties and also to get the goal of the company",
-        "icon":  "https://img.icons8.com/color/96/office.png",
+        "icon":  "/project-logos/office-management-system.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -83,7 +83,7 @@
     {
         "title":  "CCTV Management System",
         "description":  "A modern cctv management that helps you to track and report an accident that it will auto detect",
-        "icon":  "https://img.icons8.com/color/96/webcam.png",
+        "icon":  "/project-logos/cctv-management-system.svg",
         "tech":  [
                      "Next.js",
                      "Python",
@@ -96,7 +96,7 @@
     {
         "title":  "Prescription Reader",
         "description":  "It helps all the elderly and pharmacist to read the prescription of the Doctor\u0027s that It\u0027s Hard to read",
-        "icon":  "https://img.icons8.com/color/96/pill.png",
+        "icon":  "/project-logos/prescription-reader.svg",
         "tech":  [
                      "Next.js",
                      "Tailwind CSS",
@@ -108,7 +108,7 @@
     {
         "title":  "Task Management App",
         "description":  "A productivity application for managing tasks and projects. Features drag-and-drop organization, priority levels, and progress tracking to help users stay organized.",
-        "icon":  "https://img.icons8.com/color/96/todo-list.png",
+        "icon":  "/project-logos/task-management-app.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -126,7 +126,7 @@
     {
         "title":  "Shopify Landing Page",
         "description":  "A custom landing page template designed for Shopify stores. Features sections for products, testimonials, and call-to-action buttons optimized for conversions.",
-        "icon":  "https://img.icons8.com/color/96/shopping-bag.png",
+        "icon":  "/project-logos/shopify-landing-page.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -144,7 +144,7 @@
     {
         "title":  "Dental Management System",
         "description":  "A comprehensive dental clinic management system for scheduling appointments, managing patient records, tracking treatments, and handling billing. Streamlines clinic operations with an intuitive dashboard.",
-        "icon":  "https://img.icons8.com/color/96/tooth.png",
+        "icon":  "/project-logos/dental-management-system.svg",
         "tech":  [
                      "Next.js",
                      "TypeScript",
@@ -162,7 +162,7 @@
     {
         "title":  "Event Sparks",
         "description":  "A dynamic event management platform built with Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/confetti.png",
+        "icon":  "/project-logos/event-sparks.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -174,7 +174,7 @@
     {
         "title":  "Habit Harbor",
         "description":  "A habit tracking application created using Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/goal.png",
+        "icon":  "/project-logos/habit-harbor.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -186,7 +186,7 @@
     {
         "title":  "Course Craft",
         "description":  "An educational course platform built with Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/training.png",
+        "icon":  "/project-logos/course-craft.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -198,7 +198,7 @@
     {
         "title":  "Menu Muse",
         "description":  "A restaurant menu showcase created using Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/restaurant-menu.png",
+        "icon":  "/project-logos/menu-muse.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -210,7 +210,7 @@
     {
         "title":  "Pulse Studio",
         "description":  "A creative studio site built with Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/audio-wave.png",
+        "icon":  "/project-logos/pulse-studio.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -222,7 +222,7 @@
     {
         "title":  "Insight Board",
         "description":  "A dashboard application developed using Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/line-chart.png",
+        "icon":  "/project-logos/insight-board.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",
@@ -234,7 +234,7 @@
     {
         "title":  "Brandkit",
         "description":  "A branding toolkit platform built with Next.js, CSS3, and HTML5.",
-        "icon":  "https://img.icons8.com/color/96/color-palette.png",
+        "icon":  "/project-logos/brandkit.svg",
         "tech":  [
                      "Next.js",
                      "CSS3",

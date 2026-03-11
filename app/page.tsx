@@ -21,26 +21,56 @@ const staggerContainer: Variants = {
   }
 };
 
-const technicalStacks = [
-  { name: "Next JS", logo: "/logos/nextjs.svg" },
-  { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
-  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
-  { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-  { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
-  { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB" },
-  { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
-  { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-  { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
-  { name: "Flutter", logo: "https://cdn.simpleicons.org/flutter/02569B" },
-  { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
-  { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
-  { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
-  { name: "Supabase", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
-  { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase/DD2C00" },
-  { name: "Neon", logo: "/logos/neon.svg" },
-  { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql/4169E1" }
+const technicalStackGroups = [
+  {
+    title: "Frontend",
+    items: [
+      { name: "Next JS", logo: "/logos/nextjs.svg" },
+      { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
+      { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
+      { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
+      { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
+      { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "Flutter", logo: "https://cdn.simpleicons.org/flutter/02569B" }
+    ]
+  },
+  {
+    title: "Backend & Databases",
+    items: [
+      { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
+      { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
+      { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
+      { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
+      { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql/4169E1" },
+      { name: "Supabase", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
+      { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase/DD2C00" },
+      { name: "Neon", logo: "/logos/neon.svg" }
+    ]
+  },
+  {
+    title: "Other Languages & Tools",
+    items: [
+      { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB" },
+      { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
+      { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+      { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      { name: "WordPress", logo: "https://cdn.simpleicons.org/wordpress/21759B" },
+      { name: "Netlify", logo: "https://cdn.simpleicons.org/netlify/00C7B7" },
+      { name: "Vercel", logo: "https://cdn.simpleicons.org/vercel/000000" },
+      { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
+    ]
+  }
+];
+
+type SectionKey = "about" | "skills" | "experience" | "projects" | "contact";
+
+const sectionNavItems: { key: SectionKey; label: string }[] = [
+  { key: "about", label: "About" },
+  { key: "skills", label: "Skills" },
+  { key: "experience", label: "Experience" },
+  { key: "projects", label: "Projects" },
+  { key: "contact", label: "Contact" }
 ];
 
 function isImageIcon(icon?: string) {
@@ -50,6 +80,7 @@ function isImageIcon(icon?: string) {
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<SectionKey>("about");
 
   // Close mobile menu on resize
   useEffect(() => {
@@ -76,20 +107,35 @@ export default function Home() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
+  const handleSectionSelect = (section: SectionKey) => {
+    setActiveSection(section);
+    closeMobileMenu();
+    requestAnimationFrame(() => {
+      const sectionContent = document.getElementById("active-section-content");
+      sectionContent?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
   return (
     <main>
       {/* Navigation */}
       <nav className="nav">
         <div className="container nav-container">
-          <a href="#" className="nav-logo">
+          <button type="button" className="nav-logo nav-logo-btn" onClick={() => handleSectionSelect("about")}>
             JHG
-          </a>
+          </button>
           <div className="nav-links">
-            <a href="#about" className="nav-link">About</a>
-            <a href="#skills" className="nav-link">Skills</a>
-            <a href="#experience" className="nav-link">Experience</a>
-            <a href="#projects" className="nav-link">Projects</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            {sectionNavItems.map((item) => (
+              <button
+                key={item.key}
+                type="button"
+                className={`nav-link nav-link-btn ${activeSection === item.key ? "active" : ""}`}
+                onClick={() => handleSectionSelect(item.key)}
+                aria-pressed={activeSection === item.key}
+              >
+                {item.label}
+              </button>
+            ))}
             <ThemeToggle />
           </div>
           
@@ -108,11 +154,17 @@ export default function Home() {
         
         {/* Mobile Menu */}
         <div className={`nav-links-mobile ${mobileMenuOpen ? "active" : ""}`}>
-          <a href="#about" className="nav-link" onClick={closeMobileMenu}>About</a>
-          <a href="#skills" className="nav-link" onClick={closeMobileMenu}>Skills</a>
-          <a href="#experience" className="nav-link" onClick={closeMobileMenu}>Experience</a>
-          <a href="#projects" className="nav-link" onClick={closeMobileMenu}>Projects</a>
-          <a href="#contact" className="nav-link" onClick={closeMobileMenu}>Contact</a>
+          {sectionNavItems.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              className={`nav-link nav-link-btn ${activeSection === item.key ? "active" : ""}`}
+              onClick={() => handleSectionSelect(item.key)}
+              aria-pressed={activeSection === item.key}
+            >
+              {item.label}
+            </button>
+          ))}
           <div style={{ marginTop: "1rem", padding: "1rem" }}>
             <ThemeToggle />
           </div>
@@ -155,9 +207,9 @@ export default function Home() {
                 <a href="/cv" className="btn btn-secondary">
                   View CV
                 </a>
-                <a href="#contact" className="btn btn-ghost">
+                <button type="button" className="btn btn-ghost" onClick={() => handleSectionSelect("contact")}>
                   Get in Touch
-                </a>
+                </button>
               </motion.div>
               
               <motion.div variants={fadeInUp} className="hero-socials">
@@ -183,7 +235,9 @@ export default function Home() {
         </div>
       </section>
 
+      <div id="active-section-content">
       {/* About Section */}
+      {activeSection === "about" && (
       <section id="about" className="section section-alt">
         <div className="container">
           <div className="section-header">
@@ -234,7 +288,8 @@ export default function Home() {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover'
+                      objectFit: 'cover',
+                      objectPosition: 'center 18%'
                     }}
                   />
                 </div>
@@ -289,8 +344,10 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      )}
 
       {/* Technical Stack Section */}
+      {activeSection === "skills" && (
       <section id="skills" className="section">
         <div className="container">
           <motion.div
@@ -304,23 +361,31 @@ export default function Home() {
               <h2>Technical Stacks</h2>
             </div>
 
-            <div className="tech-stack-list">
-              {technicalStacks.map((stack) => (
-                <motion.div key={stack.name} className="tech-stack-chip" variants={fadeInUp}>
-                  <img
-                    src={stack.logo}
-                    alt={`${stack.name} logo`}
-                    width={20}
-                    height={20}
-                    loading="lazy"
-                  />
-                  <span>{stack.name}</span>
-                </motion.div>
+            <div className="tech-stack-groups">
+              {technicalStackGroups.map((group) => (
+                <div key={group.title} className="tech-stack-group">
+                  <h3 className="tech-stack-group-title">{group.title}</h3>
+                  <div className="tech-stack-list">
+                    {group.items.map((stack) => (
+                      <motion.div key={`${group.title}-${stack.name}`} className="tech-stack-chip" variants={fadeInUp}>
+                        <img
+                          src={stack.logo}
+                          alt={`${stack.name} logo`}
+                          width={20}
+                          height={20}
+                          loading="lazy"
+                        />
+                        <span>{stack.name}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </motion.div>
         </div>
       </section>
+      )}
 
       {/* Skills Section */}
       <section id="skills-legacy" className="section legacy-skills">
@@ -373,6 +438,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
+      {activeSection === "experience" && (
       <section id="experience" className="section">
         <div className="container">
           <div className="section-header">
@@ -410,8 +476,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Projects Section */}
+      {activeSection === "projects" && (
       <section id="projects" className="section section-alt">
         <div className="container">
           <div className="section-header">
@@ -470,8 +538,10 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      )}
 
       {/* Contact Section */}
+      {activeSection === "contact" && (
       <section id="contact" className="section">
         <div className="container">
           <div className="section-header">
@@ -496,6 +566,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      )}
+      </div>
 
       {/* Project Modal */}
       <ProjectModal 
@@ -553,6 +625,14 @@ export default function Home() {
           -webkit-text-fill-color: transparent;
           text-decoration: none;
         }
+
+        .nav-logo-btn {
+          border: none;
+          background: transparent;
+          padding: 0;
+          cursor: pointer;
+          font-family: inherit;
+        }
         
         .nav-links {
           display: flex;
@@ -567,8 +647,20 @@ export default function Home() {
           font-size: 0.9375rem;
           transition: color 0.2s;
         }
-        
+
+        .nav-link-btn {
+          border: none;
+          background: transparent;
+          padding: 0;
+          cursor: pointer;
+          font-family: inherit;
+        }
+
         .nav-link:hover {
+          color: var(--text);
+        }
+
+        .nav-link.active {
           color: var(--text);
         }
         

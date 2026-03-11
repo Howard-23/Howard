@@ -1,14 +1,26 @@
 [
   {
-    "date": "2025 – 2026",
+    "date": "2025 - 2026",
     "role": "Front-End Developer & Mobile Developer",
     "company": "PrimeX Ventures",
-    "description": "Building responsive, modern web applications for clients using Next.js, React, CSS3, HTML5, Tailwind CSS, and Flutter. Specializing in creating intuitive user interfaces and seamless user experiences."
+    "description": "Develop custom web applications and websites for clients using modern technologies. Focus on creating responsive, accessible, and performant user interfaces."
   },
   {
-    "date": "2025 – Present",
+    "date": "2025 - Present",
     "role": "Junior Web Developer",
-    "company": "Freelance",
-    "description": "Developed and maintained responsive websites, implemented UI components, and collaborated with senior developers on various client projects. Gained hands-on experience with modern web technologies."
+    "company": "Freelance / Self-Employed",
+    "description": "Assisted in the development of client websites and web applications. Gained hands-on experience with front-end technologies and industry best practices."
+  },
+  {
+    "date": "2024 - 2025",
+    "role": "Technical Support Engineer",
+    "company": "Freelance / ActionLabs IT Solutions",
+    "description": "Provided technical support for web platforms and digital tools by troubleshooting issues, guiding users, and escalating complex incidents to developers."
+  },
+  {
+    "date": "2025 - 2025",
+    "role": "Virtual Assistant & Web Support Specialist",
+    "company": "Freelance / Self-Employed",
+    "description": "Provided comprehensive virtual assistance while supporting web operations. Managed customer communications and performed basic Shopify customizations."
   }
 ]
