@@ -94,9 +94,9 @@
      {
     "title": "Barangay System",
     "description": "A Modern Barangay System that Helps other to request their clearance and etc also helps barangay to know the population in their barangay",
-    "tech": ["Next.js","Tailwind CSS","TypeScript"],
-    "github": "https://github.com/Howard-23/barangay",
-    "liveUrl": "https://barangay-three.vercel.app/"
+    "tech": ["Next.js","Tailwind CSS","TypeScript", "Supabase", "Prisma", "Laravel", "PostgreSQL"],
+    "github": "https://github.com/Howard-23/BMS",
+    "liveUrl": "https://bms-blue.vercel.app/"
   },
 
   {
