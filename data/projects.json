@@ -62,17 +62,6 @@
                      "Laravel",
                      "PostgreSQL"
                  ],
-        "github":  "https://github.com/Howard-23/barangay-system",
-        "liveUrl":  "https://barangay-system.vercel.app/"
-    },
-    {
-        "title":  "BMS",
-        "description":  "A Modern Blood Management System that Helps other to request their blood and also helps hospital to know the blood type and etc",
-        "icon":  "https://img.icons8.com/color/96/blood-drop.png",
-        "tech":  [
-                     "Next.js",
-                     "Tailwind CSS",
-                 ],
         "github":  "https://github.com/Howard-23/BMS",
         "liveUrl":  "https://bms-blue.vercel.app/"
     },
