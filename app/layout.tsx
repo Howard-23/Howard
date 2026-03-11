@@ -8,6 +8,11 @@ export const metadata = {
   title: "John Howard P. Garcia | Front-End Developer",
   description:
     "Professional Front-End Developer specializing in Next.js, React, and TypeScript. Experienced in building modern web applications and providing virtual assistance services.",
+  icons: {
+    icon: "/JHG.png",
+    shortcut: "/JHG.png",
+    apple: "/JHG.png"
+  },
   keywords: [
     "Front-End Developer",
     "Web Developer",

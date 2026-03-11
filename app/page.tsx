@@ -22,7 +22,7 @@ const staggerContainer: Variants = {
 };
 
 const technicalStacks = [
-  { name: "Next.js", logo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF" },
+  { name: "Next JS", logo: "/logos/nextjs.svg" },
   { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
   { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
@@ -36,7 +36,11 @@ const technicalStacks = [
   { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
   { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
-  { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" }
+  { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
+  { name: "Supabase", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
+  { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase/DD2C00" },
+  { name: "Neon", logo: "/logos/neon.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql/4169E1" }
 ];
 
 function isImageIcon(icon?: string) {
