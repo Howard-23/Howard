@@ -36,19 +36,6 @@
       ]
     },
     {
-      "date": "2024 - 2025",
-      "role": "Technical Support Engineer",
-      "company": "Freelance / ActionLabs IT Solutions",
-      "description": "Provided technical support for web platforms and digital tools by troubleshooting issues, guiding users, and escalating complex incidents to developers.",
-      "responsibilities": [
-        "Resolved user-reported issues across web apps, accounts, and integrations",
-        "Troubleshot bugs and reproduced incidents for faster root cause analysis",
-        "Provided clear support through email and chat with step-by-step guidance",
-        "Escalated complex technical issues and tracked them through resolution",
-        "Maintained support documentation and FAQs to reduce repeat tickets"
-      ]
-    },
-    {
       "date": "2025 - 2025",
       "role": "Virtual Assistant & Web Support Specialist",
       "company": "Freelance / Self-Employed",
@@ -59,6 +46,19 @@
         "Handled product listings, inventory updates, and order processing",
         "Maintained organized documentation and streamlined workflows",
         "Collaborated with team members to improve customer experience"
+      ]
+    },
+    {
+      "date": "2024 - 2025",
+      "role": "Technical Support Engineer",
+      "company": "Freelance / ActionLabs IT Solutions",
+      "description": "Provided technical support for web platforms and digital tools by troubleshooting issues, guiding users, and escalating complex incidents to developers.",
+      "responsibilities": [
+        "Resolved user-reported issues across web apps, accounts, and integrations",
+        "Troubleshot bugs and reproduced incidents for faster root cause analysis",
+        "Provided clear support through email and chat with step-by-step guidance",
+        "Escalated complex technical issues and tracked them through resolution",
+        "Maintained support documentation and FAQs to reduce repeat tickets"
       ]
     }
   ],
