@@ -21,47 +21,127 @@ const staggerContainer: Variants = {
   }
 };
 
-const technicalStackGroups = [
-  {
-    title: "Frontend",
-    items: [
-      { name: "Next JS", logo: "/logos/nextjs.svg" },
-      { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
-      { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
-      { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-      { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
-      { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-      { name: "Flutter", logo: "https://cdn.simpleicons.org/flutter/02569B" }
-    ]
-  },
-  {
-    title: "Backend & Databases",
-    items: [
-      { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
-      { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
-      { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
-      { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
-      { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql/4169E1" },
-      { name: "Supabase", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
-      { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase/DD2C00" },
-      { name: "Neon", logo: "/logos/neon.svg" }
-    ]
-  },
-  {
-    title: "Other Languages & Tools",
-    items: [
-      { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB" },
-      { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
-      { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-      { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-      { name: "WordPress", logo: "https://cdn.simpleicons.org/wordpress/21759B" },
-      { name: "Netlify", logo: "https://cdn.simpleicons.org/netlify/00C7B7" },
-      { name: "Vercel", logo: "https://cdn.simpleicons.org/vercel/000000" },
-      { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
-    ]
+type TechGroupTitle = "Frontend" | "Backend & Databases" | "Tools & Platforms" | "Other";
+
+type TechChip = {
+  name: string;
+  logo: string;
+};
+
+type TechCatalogEntry = {
+  logo: string;
+  group: TechGroupTitle;
+  order: number;
+};
+
+const TECH_GROUP_ORDER: TechGroupTitle[] = ["Frontend", "Backend & Databases", "Tools & Platforms", "Other"];
+
+const TECH_NAME_ALIASES: Record<string, string> = {
+  "Next JS": "Next.js",
+  "Nextjs": "Next.js",
+  "React JS": "React",
+  "Node JS": "Node.js",
+  "TailwindCSS": "Tailwind CSS",
+  "FramerMotion": "Framer Motion"
+};
+
+const TECH_COMPOUND_ALIASES: Record<string, string[]> = {
+  "Laravel PostgreSQL": ["Laravel", "PostgreSQL"]
+};
+
+const TECH_CATALOG: Record<string, TechCatalogEntry> = {
+  "Next.js": { logo: "/logos/nextjs.svg", group: "Frontend", order: 10 },
+  "TypeScript": { logo: "https://cdn.simpleicons.org/typescript/3178C6", group: "Frontend", order: 20 },
+  "Tailwind CSS": { logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4", group: "Frontend", order: 30 },
+  "HTML5": { logo: "https://cdn.simpleicons.org/html5/E34F26", group: "Frontend", order: 40 },
+  "CSS3": { logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", group: "Frontend", order: 50 },
+  "Framer Motion": { logo: "/logos/framer-motion.svg", group: "Frontend", order: 60 },
+  "Recharts": { logo: "/logos/recharts.svg", group: "Frontend", order: 70 },
+  "Laravel": { logo: "https://cdn.simpleicons.org/laravel/FF2D20", group: "Backend & Databases", order: 10 },
+  "Python": { logo: "https://cdn.simpleicons.org/python/3776AB", group: "Backend & Databases", order: 20 },
+  "Supabase": { logo: "https://cdn.simpleicons.org/supabase/3ECF8E", group: "Backend & Databases", order: 30 },
+  "Firebase": { logo: "https://cdn.simpleicons.org/firebase/DD2C00", group: "Backend & Databases", order: 40 },
+  "Prisma": { logo: "https://cdn.simpleicons.org/prisma/2D3748", group: "Backend & Databases", order: 50 },
+  "PostgreSQL": { logo: "https://cdn.simpleicons.org/postgresql/4169E1", group: "Backend & Databases", order: 60 },
+  "Neon": { logo: "/logos/neon.svg", group: "Backend & Databases", order: 70 },
+  "Vercel": { logo: "https://cdn.simpleicons.org/vercel/000000", group: "Tools & Platforms", order: 10 },
+  "GitHub": { logo: "https://cdn.simpleicons.org/github/181717", group: "Tools & Platforms", order: 20 },
+  "VSCode": { logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", group: "Tools & Platforms", order: 30 },
+  "Figma": { logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", group: "Tools & Platforms", order: 40 },
+  "Canva": { logo: "/logos/canva.svg", group: "Tools & Platforms", order: 50 }
+};
+
+function expandProjectTech(rawTech: string) {
+  const cleaned = rawTech.trim();
+  if (!cleaned) return [] as string[];
+  if (TECH_COMPOUND_ALIASES[cleaned]) {
+    return TECH_COMPOUND_ALIASES[cleaned];
   }
-];
+  return cleaned
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean);
+}
+
+function normalizeTechName(techName: string) {
+  return TECH_NAME_ALIASES[techName] ?? techName;
+}
+
+function buildTechnicalStackGroups() {
+  const firstSeenIndex = new Map<string, number>();
+  let sequence = 0;
+
+  for (const project of projects) {
+    for (const rawTech of project.tech ?? []) {
+      for (const expanded of expandProjectTech(rawTech)) {
+        const normalized = normalizeTechName(expanded);
+        if (!firstSeenIndex.has(normalized)) {
+          firstSeenIndex.set(normalized, sequence);
+          sequence += 1;
+        }
+      }
+    }
+  }
+
+  const grouped: Record<TechGroupTitle, TechChip[]> = {
+    Frontend: [],
+    "Backend & Databases": [],
+    "Tools & Platforms": [],
+    Other: []
+  };
+
+  const uniqueTechNames = Array.from(firstSeenIndex.keys());
+
+  uniqueTechNames.sort((a, b) => {
+    const aCatalog = TECH_CATALOG[a];
+    const bCatalog = TECH_CATALOG[b];
+
+    const aGroupIndex = TECH_GROUP_ORDER.indexOf(aCatalog?.group ?? "Other");
+    const bGroupIndex = TECH_GROUP_ORDER.indexOf(bCatalog?.group ?? "Other");
+    if (aGroupIndex !== bGroupIndex) return aGroupIndex - bGroupIndex;
+
+    const aOrder = aCatalog?.order ?? 999;
+    const bOrder = bCatalog?.order ?? 999;
+    if (aOrder !== bOrder) return aOrder - bOrder;
+
+    return (firstSeenIndex.get(a) ?? 0) - (firstSeenIndex.get(b) ?? 0);
+  });
+
+  for (const name of uniqueTechNames) {
+    const catalog = TECH_CATALOG[name];
+    const group = catalog?.group ?? "Other";
+    grouped[group].push({
+      name,
+      logo: catalog?.logo ?? "/logos/generic-tech.svg"
+    });
+  }
+
+  return TECH_GROUP_ORDER
+    .map((title) => ({ title, items: grouped[title] }))
+    .filter((group) => group.items.length > 0);
+}
+
+const technicalStackGroups = buildTechnicalStackGroups();
 
 type SectionKey = "about" | "skills" | "experience" | "projects" | "contact";
 
@@ -615,15 +695,25 @@ export default function Home() {
           align-items: center;
           justify-content: space-between;
           height: 64px;
+          position: relative;
+          z-index: 101;
         }
         
         .nav-logo {
           font-size: 1.5rem;
           font-weight: 800;
-          background: linear-gradient(135deg, var(--primary-500), #a855f7);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: var(--primary-500);
           text-decoration: none;
+        }
+
+        @supports ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) {
+          .nav-logo {
+            background: linear-gradient(135deg, var(--primary-500), #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+          }
         }
 
         .nav-logo-btn {
@@ -632,6 +722,7 @@ export default function Home() {
           padding: 0;
           cursor: pointer;
           font-family: inherit;
+          line-height: 1;
         }
         
         .nav-links {

@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { useState } from "react";
 import cvData from "@/data/cv.json";
+import projectsData from "@/data/projects.json";
 import Link from "next/link";
 
 const fadeInUp: Variants = {
@@ -12,6 +13,7 @@ const fadeInUp: Variants = {
 
 export default function CVPage() {
   const [expandedSections, setExpandedSections] = useState<string[]>(["experience"]);
+  const cvProjects = projectsData.length > 0 ? projectsData : (cvData.projects ?? []);
 
   const toggleSection = (section: string) => {
     setExpandedSections(prev => 
@@ -274,7 +276,7 @@ export default function CVPage() {
         </motion.div>
 
         {/* Projects */}
-        {cvData.projects && cvData.projects.length > 0 && (
+        {cvProjects.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -305,7 +307,7 @@ export default function CVPage() {
               
               {isExpanded("projects") && (
                 <div>
-                  {cvData.projects.map((project, idx) => (
+                  {cvProjects.map((project, idx) => (
                     <div key={idx} className="cv-item">
                       <span className="cv-item-title">{project.title}</span>
                       <p className="cv-item-description">{project.description}</p>
