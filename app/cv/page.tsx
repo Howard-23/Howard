@@ -381,7 +381,7 @@ export default function CVPage() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <a href="/resume.pdf" download className="btn btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
+            <a href="/cv/John%20Howard%20Garcia-CV.pdf" download="John Howard Garcia-CV.pdf" className="btn btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>

@@ -1,2 +1,4 @@
-// Minimal PostCSS config — no Tailwind plugins required for this project
-export default {};
+// Minimal PostCSS config. This project does not use extra PostCSS plugins.
+export default {
+  plugins: {}
+};

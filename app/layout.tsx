@@ -2,7 +2,20 @@ import "./globals.css";
 import ThemeProviderClient from "../components/ThemeProviderClient";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { Press_Start_2P, VT323 } from "next/font/google";
 import { ReactNode } from "react";
+
+const bodyFont = VT323({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-body"
+});
+
+const displayFont = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pixel"
+});
 
 export const metadata = {
   title: "John Howard P. Garcia | Front-End Developer",
@@ -61,15 +74,7 @@ export const viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" 
-          rel="stylesheet" 
-        />
-      </head>
-      <body>
+      <body className={`${bodyFont.variable} ${displayFont.variable}`}>
         <ThemeProviderClient>
           {children}
           <Analytics />
