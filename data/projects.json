@@ -55,12 +55,14 @@
         "icon":  "/project-logos/barangay-system.svg",
         "tech":  [
                      "Next.js",
-                     "Tailwind CSS",
                      "TypeScript",
-                     "Supabase",
+                     "Tailwind CSS",
                      "Prisma",
-                     "Laravel",
-                     "PostgreSQL"
+                     "Supabase",
+                     "NextAuth.js",
+                     "shadcn/ui",
+                     "Lucide React",
+                     "Recharts"
                  ],
         "github":  "https://github.com/Howard-23/BMS",
         "liveUrl":  "https://bms-blue.vercel.app/"
@@ -73,10 +75,14 @@
                      "Next.js",
                      "TypeScript",
                      "Tailwind CSS",
-                     "Laravel",
-                     "PostgreSQL",
+                     "Prisma",
+                     "Neon PostgreSQL",
+                     "NextAuth.js",
                      "Firebase",
-                     "Neon"
+                     "Radix UI",
+                     "React Query",
+                     "Recharts",
+                     "Cloudinary"
                  ],
         "github":  "https://github.com/Howard-23/office-management",
         "liveUrl":  "https://office-management-pi.vercel.app/login"
@@ -122,6 +128,34 @@
                            "Built persistent storage using local storage for offline support",
                            "Created intuitive UI with priority indicators and progress bars",
                            "Added filtering and sorting capabilities for task management"
+                       ]
+    },
+    {
+        "title":  "Cloud Task Workspace",
+        "description":  "A SaaS-style project and task management workspace with dashboard analytics, project and task CRUD flows, kanban views, team management, and account settings built for a modern cloud workflow.",
+        "icon":  "/project-logos/cloud-task-workspace.svg",
+        "review":  "Built with a Vite-powered React frontend, Firebase authentication, Vercel serverless APIs, and Neon PostgreSQL to deliver a full project workspace experience.",
+        "tech":  [
+                     "React",
+                     "Vite",
+                     "React Router",
+                     "HTML5",
+                     "CSS3",
+                     "Firebase Auth",
+                     "Node.js",
+                     "Vercel Serverless Functions",
+                     "Neon PostgreSQL",
+                     "PostgreSQL",
+                     "Zod",
+                     "Axios"
+                 ],
+        "github":  "https://github.com/Howard-23/Cloud-Task-Workspace",
+        "liveUrl":  "https://cloud-task-workspace.vercel.app/",
+        "highlights":  [
+                           "Built dashboard, project, task, team, profile, and settings flows in a SaaS-style workspace.",
+                           "Implemented Firebase email and password authentication with backend token verification support.",
+                           "Connected Vercel API routes to Neon PostgreSQL for project, task, and team data management.",
+                           "Added both task list and kanban-style board experiences for flexible workflow tracking."
                        ]
     },
     {

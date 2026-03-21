@@ -74,12 +74,24 @@ const sectionNavItems: { key: SectionKey; label: string }[] = [
   { key: "contact", label: "Contact" }
 ];
 
+const heroStats = [
+  { value: "16+", label: "Projects shipped" },
+  { value: "3", label: "Core focus areas" },
+  { value: "24/7", label: "Client support mindset" }
+];
+
+const aboutHighlights = [
+  "Responsive interfaces that stay polished across desktop, tablet, and mobile.",
+  "Full-stack implementation that connects clear UX with practical backend workflows.",
+  "Detail-oriented delivery for client work, internal dashboards, and portfolio-ready builds."
+];
+
 function isImageIcon(icon?: string) {
   return typeof icon === "string" && /^(https?:\/\/|\/)/.test(icon);
 }
 
 export default function Home() {
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<SectionKey>("about");
 
@@ -175,27 +187,27 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
-          {(
-            <motion.div 
-              className="hero-content"
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-            >
+          <motion.div
+            className="hero-grid"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.div className="hero-copy" variants={fadeInUp}>
+              <div className="hero-badge">Available for web and mobile projects</div>
               <motion.h1 variants={fadeInUp}>
-                Hi, I&apos;m <span className="gradient">John Howard Garcia</span>
+                Building <span className="gradient">detailed digital products</span> that feel sharp on every screen.
               </motion.h1>
-              
+
               <motion.div variants={fadeInUp} className="hero-subtitle">
-                Fullstack Developer & Mobile Developer
+                John Howard Garcia • Fullstack Developer • Mobile Developer
               </motion.div>
-              
+
               <motion.div variants={fadeInUp} className="hero-description">
-                I craft responsive, user-focused web applications using modern technologies. 
-                With expertise in Next.js, React, and Shopify, I help businesses build 
-                their digital presence while providing efficient virtual assistance.
+                I design and build responsive interfaces, dashboards, and client-facing websites with a focus on clarity,
+                performance, and polished visual presentation from desktop down to small phones.
               </motion.div>
-              
+
               <motion.div variants={fadeInUp} className="hero-actions">
                 <a href="/cv/John%20Howard%20Garcia-CV.pdf" download="John Howard Garcia-CV.pdf" className="btn btn-primary">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -208,11 +220,11 @@ export default function Home() {
                 <a href="/cv" className="btn btn-secondary">
                   View CV
                 </a>
-                <button type="button" className="btn btn-ghost" onClick={() => handleSectionSelect("contact")}>
-                  Get in Touch
+                <button type="button" className="btn btn-ghost" onClick={() => handleSectionSelect("projects")}>
+                  Explore Work
                 </button>
               </motion.div>
-              
+
               <motion.div variants={fadeInUp} className="hero-socials">
                 <a href="https://github.com/Howard-23/Howard-23" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                   <svg viewBox="0 0 24 24" fill="currentColor">
@@ -232,7 +244,38 @@ export default function Home() {
                 </a>
               </motion.div>
             </motion.div>
-          )}
+
+            <motion.div className="hero-visual" variants={fadeInUp}>
+              <div className="hero-profile-card">
+                <div className="hero-profile-top">
+                  <div className="hero-portrait-frame">
+                    <img src="/profile.jpg" alt="John Howard P. Garcia" className="hero-portrait" />
+                  </div>
+                  <div className="hero-profile-meta">
+                    <span className="hero-kicker">Based in the Philippines</span>
+                    <h2>Crafting modern interfaces with practical engineering.</h2>
+                    <p>Focused on portfolio sites, business systems, dashboards, and mobile-first execution.</p>
+                  </div>
+                </div>
+
+                <div className="hero-stats-grid">
+                  {heroStats.map((stat) => (
+                    <div key={stat.label} className="hero-stat-card">
+                      <strong>{stat.value}</strong>
+                      <span>{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="hero-signal-strip" aria-hidden="true">
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
@@ -254,90 +297,53 @@ export default function Home() {
           </div>
 
           <motion.div
+            className="about-shell"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <div className="about-content" style={{ 
-              maxWidth: '800px', 
-              margin: '0 auto',
-              background: 'var(--bg-elevated)',
-              border: '1px solid var(--border)',
-              borderRadius: '20px',
-              padding: 'clamp(1.25rem, 4vw, 2.5rem)'
-            }}>
-              <div style={{ 
-                display: 'flex', 
-                gap: 'clamp(1rem, 3vw, 2rem)', 
-                flexWrap: 'wrap', 
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                {/* Profile Image */}
-                <div style={{
-                  width: 'clamp(100px, 25vw, 150px)',
-                  height: 'clamp(100px, 25vw, 150px)',
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                  flexShrink: 0,
-                  border: '3px solid var(--primary-500)'
-                }}>
-                  <img 
-                    src="/profile.jpg" 
-                    alt="John Howard P. Garcia"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center 18%'
-                    }}
-                  />
+            <div className="about-content">
+              <div className="about-identity-card">
+                <div className="about-avatar-wrap">
+                  <img src="/profile.jpg" alt="John Howard P. Garcia" className="about-avatar" />
                 </div>
-                
-                {/* About Text */}
-                <div style={{ flex: 1, minWidth: 'min(100%, 250px)', textAlign: 'center' }}>
-                  <h3 style={{ 
-                    fontSize: 'clamp(1.125rem, 4vw, 1.5rem)', 
-                    fontWeight: 600, 
-                    marginBottom: '1rem',
-                    background: 'linear-gradient(135deg, var(--primary-500), #a855f7)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text'
-                  }}>
-                    John Howard P. Garcia
-                  </h3>
-                  <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1rem' }}>
-                    I&apos;m a passionate Fullstack Developer and Mobile Developer based in the Philippines. 
-                    With a strong foundation in modern web technologies and a keen eye for detail, 
-                    I help businesses establish their digital presence and streamline their operations.
+                <div className="about-identity-copy">
+                  <span className="about-kicker">Developer profile</span>
+                  <h3>John Howard P. Garcia</h3>
+                  <p>
+                    I&apos;m a fullstack and mobile developer who builds clean, responsive products with a strong focus on
+                    structure, usability, and visual detail.
                   </p>
-                  <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                    When I&apos;m not coding, you can find me learning new technologies, optimizing workflows, 
-                    or helping clients achieve their goals through efficient virtual assistance.
-                  </p>
-                  
-                  {/* Quick Stats */}
-                  <div className="about-stats" style={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', 
-                    gap: '1rem',
-                    paddingTop: '1.5rem',
-                    borderTop: '1px solid var(--border)'
-                  }}>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>1+</div>
-                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Years Experience</div>
+                </div>
+              </div>
+
+              <div className="about-details">
+                <p className="about-lead">
+                  I help businesses establish their digital presence, streamline workflows, and ship interfaces that stay
+                  readable, fast, and polished across devices.
+                </p>
+                <div className="about-highlights">
+                  {aboutHighlights.map((item) => (
+                    <div key={item} className="about-highlight-card">
+                      <span className="about-highlight-dot" aria-hidden="true" />
+                      <p>{item}</p>
                     </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>8+</div>
-                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Projects Completed</div>
-                    </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: 'clamp(1.5rem, 4vw, 1.75rem)', fontWeight: 700, color: 'var(--primary-500)' }}>3+</div>
-                      <div style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)', color: 'var(--text-muted)' }}>Happy Clients</div>
-                    </div>
+                  ))}
+                </div>
+
+                <div className="about-stats">
+                  <div>
+                    <strong>1+</strong>
+                    <span>Years Experience</span>
+                  </div>
+                  <div>
+                    <strong>16+</strong>
+                    <span>Portfolio Projects</span>
+                  </div>
+                  <div>
+                    <strong>3+</strong>
+                    <span>Happy Clients</span>
                   </div>
                 </div>
               </div>
@@ -523,6 +529,10 @@ export default function Home() {
                   )}
                 </div>
                 <div className="project-content">
+                  <div className="project-meta-row">
+                    <span className="project-eyebrow">Featured build</span>
+                    <span className="project-stack-count">{project.tech?.length ?? 0} tools</span>
+                  </div>
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
                   <div className="project-tech">
