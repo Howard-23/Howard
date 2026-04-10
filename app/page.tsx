@@ -303,47 +303,10 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-<<<<<<< HEAD
             <div className="about-content">
               <div className="about-identity-card">
                 <div className="about-avatar-wrap">
                   <img src="/profile.jpg" alt="John Howard P. Garcia" className="about-avatar" />
-=======
-            <div className="about-content" style={{ 
-              maxWidth: '800px', 
-              margin: '0 auto',
-              background: 'var(--bg-elevated)',
-              border: '1px solid var(--border)',
-              borderRadius: '20px',
-              padding: 'clamp(1.25rem, 4vw, 2.5rem)'
-            }}>
-              <div style={{ 
-                display: 'flex', 
-                gap: 'clamp(1rem, 3vw, 2rem)', 
-                flexWrap: 'wrap', 
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                {/* Profile Image */}
-                <div className="about-profile-image" style={{
-                  width: 'clamp(100px, 25vw, 150px)',
-                  height: 'clamp(100px, 25vw, 150px)',
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                  flexShrink: 0,
-                  border: '3px solid var(--primary-500)'
-                }}>
-                  <img 
-                    src="/profile.jpg" 
-                    alt="John Howard P. Garcia"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center 18%'
-                    }}
-                  />
->>>>>>> 7f22882 (Update portfolio)
                 </div>
                 <div className="about-identity-copy">
                   <span className="about-kicker">Developer profile</span>
