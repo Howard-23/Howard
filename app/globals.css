@@ -1803,10 +1803,43 @@ select {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .about-highlights,
   .about-stats,
   .hero-stats-grid {
     grid-template-columns: 1fr;
+=======
+  .about-profile-image {
+    display: none !important;
+  }
+
+  .about-content img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center 18%;
+    display: block;
+  }
+  
+  .about-content h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .about-content > div > div:last-child {
+    min-width: unset !important;
+  }
+  
+  /* Stats grid in About */
+  .about-content > div > div:last-child > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .about-content > div > div:last-child > div:last-child > div {
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 12px;
+>>>>>>> 7f22882 (Update portfolio)
   }
   
   /* Skills Section */
