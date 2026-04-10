@@ -80,6 +80,14 @@ const heroStats = [
   { value: "24/7", label: "Client support mindset" }
 ];
 
+const sectionDescriptions: Record<SectionKey, string> = {
+  about: "Background, focus, and working style.",
+  skills: "Tech stack and tools I use.",
+  experience: "Roles, timeline, and delivery work.",
+  projects: "Selected builds and case-study highlights.",
+  contact: "Ways to reach me for new work."
+};
+
 const aboutHighlights = [
   "Responsive interfaces that stay polished across desktop, tablet, and mobile.",
   "Full-stack implementation that connects clear UX with practical backend workflows.",
@@ -247,15 +255,25 @@ export default function Home() {
 
             <motion.div className="hero-visual" variants={fadeInUp}>
               <div className="hero-profile-card">
-                <div className="hero-profile-top">
-                  <div className="hero-portrait-frame">
-                    <img src="/profile.jpg" alt="John Howard P. Garcia" className="hero-portrait" />
-                  </div>
-                  <div className="hero-profile-meta">
-                    <span className="hero-kicker">Based in the Philippines</span>
-                    <h2>Crafting modern interfaces with practical engineering.</h2>
-                    <p>Focused on portfolio sites, business systems, dashboards, and mobile-first execution.</p>
-                  </div>
+                <div className="hero-section-header">
+                  <span className="hero-kicker">Portfolio sections</span>
+                  <h2>Open About, Skills, Experience, Projects, and Contact as separate views.</h2>
+                  <p>The introduction stays here, and the full section content loads below just like the other tabs.</p>
+                </div>
+
+                <div className="hero-section-nav">
+                  {sectionNavItems.map((item) => (
+                    <button
+                      key={item.key}
+                      type="button"
+                      className={`hero-section-link ${activeSection === item.key ? "active" : ""}`}
+                      onClick={() => handleSectionSelect(item.key)}
+                      aria-pressed={activeSection === item.key}
+                    >
+                      <strong>{item.label}</strong>
+                      <span>{sectionDescriptions[item.key]}</span>
+                    </button>
+                  ))}
                 </div>
 
                 <div className="hero-stats-grid">
