@@ -33,35 +33,21 @@ const technicalStackGroups = [
       { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
       { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
       { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-      { name: "Flutter", logo: "https://cdn.simpleicons.org/flutter/02569B" }
+      { name: "Tailwind CSS", logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4" }
     ]
   },
   {
-    title: "Backend & Databases",
+    title: "Backend & Tools",
     items: [
       { name: "Node JS", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
-      { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { name: "Laravel", logo: "https://cdn.simpleicons.org/laravel/FF2D20" },
-      { name: "PHP", logo: "https://cdn.simpleicons.org/php/777BB4" },
-      { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB" },
-      { name: "MySQL", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
-      { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql/4169E1" },
-      { name: "Supabase", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
-      { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase/DD2C00" },
-      { name: "Neon", logo: "/logos/neon.svg" }
+      { name: "Git", logo: "https://cdn.simpleicons.org/git/F05032" },
+      { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" }
     ]
   },
   {
-    title: "Other Languages & Tools",
+    title: "E-Commerce",
     items: [
-      { name: "GitHub", logo: "https://cdn.simpleicons.org/github/181717" },
-      { name: "GitHub Desktop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-      { name: "VSCode", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-      { name: "WordPress", logo: "https://cdn.simpleicons.org/wordpress/21759B" },
-      { name: "Netlify", logo: "https://cdn.simpleicons.org/netlify/00C7B7" },
-      { name: "Vercel", logo: "https://cdn.simpleicons.org/vercel/000000" },
-      { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      { name: "Canva", logo: "/logos/canva.svg" }
+      { name: "Shopify Liquid", logo: "https://cdn.simpleicons.org/shopify/7AB55C" }
     ]
   }
 ];
@@ -439,13 +425,13 @@ export default function Home() {
             <SkillCard 
               icon="🎨"
               title="Frontend Development"
-              skills={["Next.js", "Nuxt.js", "React", "Vue.js", "TypeScript", "Tailwind CSS", "HTML5/CSS3"]}
+              skills={["Next.js", "Nuxt.js", "React", "Vue.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"]}
               level={90}
             />
             <SkillCard 
               icon="⚙️"
               title="Backend & Tools"
-              skills={["Node.js", "Java", "Python",]}
+              skills={["Node.js", "Git", "GitHub"]}
               level={75}
             />
             <SkillCard 
@@ -456,8 +442,8 @@ export default function Home() {
             />
             <SkillCard 
               icon="💼"
-              title="Virtual Assistance"
-              skills={["Email Management", "Chat Support", "Data Entry", "Calendar Management"]}
+              title="Soft Skills"
+              skills={["Time Management", "Problem Solving", "Client Relations"]}
               level={85}
             />
           </motion.div>
