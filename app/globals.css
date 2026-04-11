@@ -430,6 +430,10 @@ select {
   margin-bottom: 1.5rem;
 }
 
+.hero-subtitle-line {
+  display: block;
+}
+
 .hero-description {
   font-size: 1.125rem;
   color: var(--text-muted);

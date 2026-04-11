@@ -211,7 +211,10 @@ export default function Home() {
               </motion.h1>
 
               <motion.div variants={fadeInUp} className="hero-subtitle">
-                John Howard Garcia • Fullstack Developer • Mobile Developer
+                <span className="hero-subtitle-line">John Howard Garcia &bull;</span>
+                <span className="hero-subtitle-line">Computer Engineer &bull; Fullstack Developer &bull;</span>
+                <span className="hero-subtitle-line">Mobile Developer &bull;</span>
+                <span className="hero-subtitle-line">Technical Support Engineer</span>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="hero-description">
