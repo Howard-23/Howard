@@ -79,7 +79,9 @@
   "skills": {
     "frontend": [
       "Next.js",
+      "Nuxt.js",
       "React",
+      "Vue.js",
       "TypeScript",
       "JavaScript",
       "HTML",
@@ -211,6 +213,26 @@
         "Implemented Firebase email and password authentication with backend token verification support.",
         "Connected Vercel API routes to Neon PostgreSQL for project, task, and team data management.",
         "Added both task list and kanban-style board experiences for flexible workflow tracking."
+      ]
+    },
+    {
+      "title": "Brewlytics",
+      "description": "A polished SaaS-style coffee shop dashboard that brings analytics, orders, inventory, and customer insights into one operator-focused workspace for faster day-to-day decisions.",
+      "icon": "/project-logos/brewlytics.svg",
+      "tech": [
+        "Nuxt 3",
+        "Vue 3",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vue Router"
+      ],
+      "github": "https://github.com/Howard-23/Brewlytics",
+      "liveUrl": "https://brewlytics-eight.vercel.app/customers",
+      "highlights": [
+        "Built a multi-page dashboard covering overview, analytics, orders, inventory, and customer intelligence for coffee shop operations.",
+        "Created shared workspace state for revenue trends, channel mix, customer segments, stock health, and order activity.",
+        "Added interactive filtering and actions for channel views, ticket status updates, inventory restocking, and insight workflows.",
+        "Designed a branded, responsive SaaS interface with reusable Vue components and coffee-focused visual storytelling."
       ]
     },
     {

@@ -26,7 +26,9 @@ const technicalStackGroups = [
     title: "Frontend",
     items: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
+      { name: "Nuxt JS", logo: "https://cdn.simpleicons.org/nuxt/00DC82" },
       { name: "React JS", logo: "https://cdn.simpleicons.org/react/61DAFB" },
+      { name: "Vue JS", logo: "https://cdn.simpleicons.org/vuedotjs/4FC08D" },
       { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript/3178C6" },
       { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript/F7DF1E" },
       { name: "HTML5", logo: "https://cdn.simpleicons.org/html5/E34F26" },
@@ -437,7 +439,7 @@ export default function Home() {
             <SkillCard 
               icon="🎨"
               title="Frontend Development"
-              skills={["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML5/CSS3"]}
+              skills={["Next.js", "Nuxt.js", "React", "Vue.js", "TypeScript", "Tailwind CSS", "HTML5/CSS3"]}
               level={90}
             />
             <SkillCard 
