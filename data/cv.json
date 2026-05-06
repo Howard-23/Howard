@@ -1,11 +1,13 @@
 {
   "personalInfo": {
     "name": "John Howard P. Garcia",
-    "title": "Fullstack Developer & Mobile Developer",
+    "title": "Junior Software Developer",
     "email": "johnhowardgarcia23@gmail.com",
     "phone": "+639073170635",
     "location": "Philippines",
-    "summary": "Results-driven Front-End Developer with expertise in building modern, responsive web applications using Next.js, React, CSS3, HTML5, and TypeScript & Building Mobile Application using Flutter. Experienced in providing virtual assistance services including email/chat management and Shopify store customization. Passionate about creating intuitive user experiences and delivering high-quality work that exceeds client expectations."
+    "summary": "Junior Software Developer with a focus on front-end development, building modern and responsive web applications using Next.js, React, HTML5, CSS3, and TypeScript, along with mobile applications using Flutter. Experienced in supporting tasks such as email/chat management and basic Shopify store customization. Committed to learning, improving technical skills, and delivering reliable, user-friendly solutions.",
+    "github": "https://github.com/Howard-23",
+    "linkedin": "https://linkedin.com/in/johnhowardgarcia"
   },
   "experience": [
     {
@@ -90,6 +92,20 @@
     ],
     "backend & tools": [
       "Node.js",
+      "Laravel",
+      "PostgreSQL", "MySQL",
+      "MongoDB",
+      "GitLab CI/CD",
+      "Docker",
+      "Firebase",
+      "Supabase"
+    ],
+    "version control": [
+      "Git",
+      "GitHub",
+      "GitLab"
+    ],
+    "other": [
       "Git",
       "GitHub"
     ],

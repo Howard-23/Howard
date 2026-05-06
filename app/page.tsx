@@ -212,14 +212,13 @@ export default function Home() {
 
               <motion.div variants={fadeInUp} className="hero-subtitle">
                 <span className="hero-subtitle-line">John Howard Garcia &bull;</span>
-                <span className="hero-subtitle-line">Computer Engineer &bull; Fullstack Developer &bull;</span>
-                <span className="hero-subtitle-line">Mobile Developer &bull;</span>
-                <span className="hero-subtitle-line">Technical Support Engineer</span>
+                <span className="hero-subtitle-line">Computer Engineer &bull; Junior Software Developer</span>
+                
+
               </motion.div>
 
               <motion.div variants={fadeInUp} className="hero-description">
-                I design and build responsive interfaces, dashboards, and client-facing websites with a focus on clarity,
-                performance, and polished visual presentation from desktop down to small phones.
+              I build responsive web interfaces, dashboards, and client-facing applications with a focus on clean design, performance, and usability across devices—from desktop to mobile. As a junior software developer, I’m continuously improving my skills while delivering clear and maintainable solutions.
               </motion.div>
 
               <motion.div variants={fadeInUp} className="hero-actions">
@@ -336,7 +335,7 @@ export default function Home() {
                   <span className="about-kicker">Developer profile</span>
                   <h3>John Howard P. Garcia</h3>
                   <p>
-                    I&apos;m a fullstack and mobile developer who builds clean, responsive products with a strong focus on
+                    I&apos;m a Junior Software Developer based in the Philippines who builds clean, responsive products with a strong focus on
                     structure, usability, and visual detail.
                   </p>
                 </div>
